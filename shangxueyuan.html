@@ -336,6 +336,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .ftile .dot{width:6px;height:6px;border-radius:50%;background:var(--g);flex-shrink:0;margin-top:9px}
 .ftile strong{color:var(--w)}
 .laynote{max-width:920px;margin:16px auto 0;text-align:center;font-size:12px;color:var(--grey)}
+.selhint{display:none;text-align:center;font-size:11px;color:var(--grey);margin-top:8px}
 .seltabw{overflow-x:auto;border:1px solid rgba(0,0,0,.1);border-radius:10px;background:#fff;max-width:920px;margin:0 auto}
 .seltab{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
 .seltab th{background:rgba(0,0,0,.06);color:var(--w);font-weight:700;text-align:left;padding:13px 18px;font-size:12px;letter-spacing:1px}
@@ -344,7 +345,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .seltab td:last-child{font-family:var(--sf);font-weight:700;color:var(--g2)}
 .pk3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
 a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color:#ffff00}
-@media(max-width:960px){.ftiles{grid-template-columns:1fr}.pk3{grid-template-columns:1fr;max-width:520px}.ccard{flex-direction:column;align-items:flex-start}.ccp{text-align:left}.lay{padding:56px 20px}}
+@media(max-width:960px){.ftiles{grid-template-columns:1fr}.pk3{grid-template-columns:1fr;max-width:520px}.ccard{flex-direction:column;align-items:flex-start}.ccp{text-align:left}.lay{padding:56px 20px}.ccard>div[style*="width:200px"]{width:100%!important}}
+@media(max-width:600px){.lbadge{flex-direction:column;align-items:center;gap:10px;width:100%}.lbadge span{font-size:22px;text-align:center}.selhint{display:block}}
 </style>
 </head>
 <body>
@@ -538,6 +540,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 </tbody>
 </table>
 </div>
+<div class="selhint">← 表格可左右滑动查看 →</div>
 </div>
 </section>
 
