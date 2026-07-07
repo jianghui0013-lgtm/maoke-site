@@ -7,12 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#b07d21;--g2:#8f6614;--gd:rgba(176,125,33,.1);--w:#1a222e;--grey:#5b6b7c;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
+:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#e02020;--g2:#c11616;--gd:rgba(255,212,0,.16);--w:#111111;--grey:#595959;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,30,45,.08)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
 .nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
 .nl{width:34px;height:34px;border-radius:8px;overflow:hidden;flex-shrink:0}
 .nl img{width:100%;height:100%;object-fit:cover}
@@ -20,14 +20,14 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .nlinks a{font-size:13px;color:var(--grey);transition:color .2s}.nlinks a:hover{color:var(--w)}
 .ncta{margin-left:auto;background:var(--g);color:#fff;font-size:13px;font-weight:700;padding:8px 20px;border-radius:var(--r);border:none;transition:background .2s}
 .ncta:hover{background:var(--g2)}
-.nham{display:none;margin-left:14px;width:38px;height:38px;background:transparent;border:1px solid rgba(20,30,45,.16);border-radius:8px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0}
+.nham{display:none;margin-left:14px;width:38px;height:38px;background:transparent;border:1px solid rgba(0,0,0,.16);border-radius:8px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0}
 .nham span{display:block;width:18px;height:2px;background:var(--w);border-radius:2px;transition:transform .28s,opacity .28s}
 .nham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .nham.open span:nth-child(2){opacity:0}
 .nham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
-.nmenu{position:fixed;top:58px;left:0;right:0;z-index:899;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,30,45,.08);display:flex;flex-direction:column;padding:8px 24px 24px;transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s,visibility .3s}
+.nmenu{position:fixed;top:58px;left:0;right:0;z-index:899;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08);display:flex;flex-direction:column;padding:8px 24px 24px;transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s,visibility .3s}
 .nmenu.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
-.nmenu a{font-size:16px;color:#3a4656;padding:15px 4px;border-bottom:1px solid rgba(20,30,45,.06);transition:color .2s}
+.nmenu a{font-size:16px;color:#333333;padding:15px 4px;border-bottom:1px solid rgba(0,0,0,.06);transition:color .2s}
 .nmenu a:active,.nmenu a:hover{color:var(--g2)}
 .nmenu-cta{margin-top:18px;background:var(--g);color:#fff;font-size:15px;font-weight:700;padding:14px;border-radius:var(--r);border:none;width:100%}
 .nmenu-bk{position:fixed;inset:58px 0 0;z-index:898;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
@@ -39,26 +39,26 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.58)}
 .ho{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,10,.1) 0%,rgba(10,10,10,0) 25%,rgba(8,12,20,.72) 100%)}
 .hbot{position:absolute;bottom:52px;left:44px;right:44px;color:#fff;text-align:center}
-.hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#f2c25e;margin-bottom:14px;text-transform:uppercase}
+.hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#ffd400;margin-bottom:14px;text-transform:uppercase}
 .ht{font-family:var(--ss);font-size:clamp(34px,5.5vw,80px);font-weight:900;line-height:1.2;margin-bottom:14px}
-.ht em{color:#f2c25e;font-style:normal}
+.ht em{color:#ffd400;font-style:normal}
 .hsub{font-size:15px;color:rgba(255,255,255,.65);max-width:560px;line-height:1.7;margin:0 auto}
 .hcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
 .hbtn{border:none;border-radius:var(--r);padding:13px 24px;font-size:14px;font-weight:700}
 .hbtn.primary{background:var(--g);color:#fff}.hbtn.primary:hover{background:var(--g2)}
 .hbtn.secondary{background:rgba(255, 255, 255, .14);color:#fff;border:1px solid rgba(255, 255, 255, .34)}
 .hproof{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;max-width:680px;justify-content:center;margin-left:auto;margin-right:auto}
-.hpill{font-size:12px;font-weight:700;color:#f2c25e;background:rgba(201,150,58,.14);border:1px solid rgba(201,150,58,.34);border-radius:20px;padding:6px 12px}
+.hpill{font-size:12px;font-weight:700;color:#ffd400;background:rgba(235,183,0,.14);border:1px solid rgba(235,183,0,.34);border-radius:20px;padding:6px 12px}
 .hdots{position:absolute;bottom:28px;right:64px;display:flex;gap:7px}
 .hd{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);border:none;transition:all .3s;cursor:pointer}
-.ha{background:#f2c25e;width:22px;border-radius:3px}
+.ha{background:#ffd400;width:22px;border-radius:3px}
 .harr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.4);border:1px solid rgba(255, 255, 255, .2);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;transition:all .2s}
-.harr:hover{background:rgba(201,150,58,.55)}
+.harr:hover{background:rgba(235,183,0,.55)}
 .hp{left:22px}.hn{right:22px}
 /* PAIN */
-.pb{background:var(--ink);border-top:1px solid rgba(20,30,45,.06);border-bottom:1px solid rgba(20,30,45,.06)}
+.pb{background:var(--ink);border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}
 .pbi{max-width:var(--mx);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-.pi{padding:24px 26px;border-right:1px solid rgba(20,30,45,.08);position:relative}
+.pi{padding:24px 26px;border-right:1px solid rgba(0,0,0,.08);position:relative}
 .pi:last-child{border-right:none}
 .pq{font-size:14px;font-weight:700;color:var(--w);margin-bottom:4px}
 .pa{font-size:12px;color:var(--grey);line-height:1.6}
@@ -70,19 +70,19 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .ssb{font-size:14px;color:var(--grey);max-width:560px;line-height:1.8}
 .sh{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:44px}
 .sh.c{align-items:center;text-align:center}.sh.c .ssb{text-align:center}
-.dv{height:1px;background:rgba(20,30,45,.08)}
+.dv{height:1px;background:rgba(0,0,0,.08)}
 /* ACADEMY SYSTEM */
-.syssec{background:var(--ink);padding:74px 40px;border-top:1px solid rgba(20,30,45,.06)}
+.syssec{background:var(--ink);padding:74px 40px;border-top:1px solid rgba(0,0,0,.06)}
 .sysgrid{max-width:var(--mx);margin:0 auto;display:grid;gap:30px}
 .syslead{max-width:820px;margin:0 auto;text-align:center}
 .syslead .stl{margin-left:auto;margin-right:auto}
-.sysline{font-size:14px;color:#414e60;line-height:1.9;margin:12px auto 0;max-width:780px}
+.sysline{font-size:14px;color:#3d3d3d;line-height:1.9;margin:12px auto 0;max-width:780px}
 .syscards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.syscard{background:rgba(20,30,45,.05);border:1px solid rgba(20,30,45,.08);border-radius:8px;padding:18px 16px;min-height:142px}
+.syscard{background:rgba(0,0,0,.05);border:1px solid rgba(0,0,0,.08);border-radius:8px;padding:18px 16px;min-height:142px}
 .sysnum{font-family:var(--sf);font-size:18px;font-weight:900;color:var(--g2);margin-bottom:8px}
 .syst{font-size:14px;font-weight:700;color:var(--w);margin-bottom:6px}
 .sysd{font-size:12px;color:var(--grey);line-height:1.7}
-.sysfoot{margin:18px auto 0;padding:16px 18px;border-radius:8px;background:rgba(201,150,58,.08);border:1px solid rgba(201,150,58,.22);font-size:13px;color:#3a4656;line-height:1.8;max-width:900px;display:flex;align-items:center;justify-content:space-between;gap:18px;text-align:left}
+.sysfoot{margin:18px auto 0;padding:16px 18px;border-radius:8px;background:rgba(235,183,0,.08);border:1px solid rgba(235,183,0,.22);font-size:13px;color:#333333;line-height:1.8;max-width:900px;display:flex;align-items:center;justify-content:space-between;gap:18px;text-align:left}
 .sysfoot span{flex:1}
 .sysfoot button{flex-shrink:0;background:var(--g);color:#fff;border:none;border-radius:var(--r);padding:11px 18px;font-size:13px;font-weight:700}
 .sysfoot button:hover{background:var(--g2)}
@@ -99,64 +99,64 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .jhbk img{width:100%;height:auto}
 .jhbs{text-align:center;font-size:11px;color:var(--g);font-weight:700;padding:6px;background:var(--gd);border-radius:4px}
 .jhtgs{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
-.jhtg{font-size:10px;padding:3px 9px;border-radius:20px;border:1px solid rgba(201,150,58,.3);color:var(--g2);background:var(--gd)}
+.jhtg{font-size:10px;padding:3px 9px;border-radius:20px;border:1px solid rgba(235,183,0,.3);color:var(--g2);background:var(--gd)}
 .jhc{display:flex;flex-direction:column;gap:24px;min-width:0}
 .jhey{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--g);margin-bottom:6px}
 .jhn{font-family:var(--sf);font-size:40px;font-weight:900;margin-bottom:4px}
 .jhtl{font-size:14px;color:var(--grey)}
-.jhst{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(20,30,45,.1);border:1px solid rgba(20,30,45,.1);border-radius:10px;overflow:hidden;margin-top:16px}
+.jhst{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(0,0,0,.1);border:1px solid rgba(0,0,0,.1);border-radius:10px;overflow:hidden;margin-top:16px}
 .jhs2{background:#fff;padding:14px 10px;text-align:center}
 .jhsv{font-family:var(--sf);font-size:28px;font-weight:900;color:var(--g2);display:block;line-height:1.2}
 .jhsl{font-size:12px;color:var(--grey);margin-top:5px;display:block}
 /* Hero statement */
-.hstat{background:linear-gradient(135deg,rgba(201,150,58,.08),rgba(201,150,58,.03));border:1px solid rgba(201,150,58,.2);border-radius:10px;padding:24px 28px}
+.hstat{background:linear-gradient(135deg,rgba(235,183,0,.08),rgba(235,183,0,.03));border:1px solid rgba(235,183,0,.2);border-radius:10px;padding:24px 28px}
 .hstat-title{font-family:var(--sf);font-size:20px;font-weight:700;color:var(--g2);margin-bottom:6px}
 .hstat-sub{font-size:13px;color:var(--grey);line-height:1.7}
 /* Authority list */
-.auth{display:flex;flex-direction:column;gap:0;border:1px solid rgba(20,30,45,.08);border-radius:10px;overflow:hidden}
-.au{display:flex;align-items:flex-start;gap:13px;padding:14px 16px;border-bottom:1px solid rgba(20,30,45,.06);background:var(--ink2)}
+.auth{display:flex;flex-direction:column;gap:0;border:1px solid rgba(0,0,0,.08);border-radius:10px;overflow:hidden}
+.au{display:flex;align-items:flex-start;gap:13px;padding:14px 16px;border-bottom:1px solid rgba(0,0,0,.06);background:var(--ink2)}
 .au:last-child{border-bottom:none}
 .aui{font-size:17px;flex-shrink:0;margin-top:1px}
-.aut{font-size:14px;color:#3a4656;line-height:1.8}.aut strong{color:var(--w)}
+.aut{font-size:14px;color:#333333;line-height:1.8}.aut strong{color:var(--w)}
 /* Testimonials */
 .tey{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--g);margin-bottom:16px}
-.ti{padding:13px 0;border-bottom:1px solid rgba(20,30,45,.06);display:flex;gap:11px;align-items:flex-start}
+.ti{padding:13px 0;border-bottom:1px solid rgba(0,0,0,.06);display:flex;gap:11px;align-items:flex-start}
 .ti:last-child{border-bottom:none}
 .td{width:4px;height:4px;background:var(--g);border-radius:50%;flex-shrink:0;margin-top:8px}
 .tt{font-size:14px;color:#5b6b7c;line-height:1.9}.tt strong{color:var(--w)}
 /* Video row */
 .vrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
-.vc{background:var(--ink2);border-radius:8px;overflow:hidden;border:1px solid rgba(20,30,45,.08)}
+.vc{background:var(--ink2);border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
 .vcont{aspect-ratio:16/9;background:#0d1117;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;cursor:pointer}
-.vplay{width:44px;height:44px;background:rgba(201,150,58,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
-.vlbl{font-size:11px;color:#a8b6c4}
+.vplay{width:44px;height:44px;background:rgba(235,183,0,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
+.vlbl{font-size:11px;color:#bbbbbb}
 .vinf{padding:12px 14px}
 .vtag{font-size:10px;color:var(--g);font-weight:700;margin-bottom:4px}
 .vtitle{font-size:12px;font-weight:700;color:var(--w);margin-bottom:3px}
 .vdesc{font-size:11px;color:var(--grey);line-height:1.5}
 /* METHODS - horizontal cards */
 .msec{background:var(--bk);padding:80px 40px}
-.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(20,30,45,.1);border-radius:12px;overflow:hidden}
-.mc{background:var(--ink);border-right:1px solid rgba(20,30,45,.1);display:flex;flex-direction:column}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(0,0,0,.1);border-radius:12px;overflow:hidden}
+.mc{background:var(--ink);border-right:1px solid rgba(0,0,0,.1);display:flex;flex-direction:column}
 .mc:last-child{border-right:none}
-.mc.hl{background:rgba(201,150,58,.05);border-right-color:rgba(201,150,58,.15)}
-.mch{padding:28px 24px 20px;border-bottom:1px solid rgba(20,30,45,.08)}
-.mc.hl .mch{border-bottom-color:rgba(201,150,58,.15)}
+.mc.hl{background:rgba(235,183,0,.05);border-right-color:rgba(235,183,0,.15)}
+.mch{padding:28px 24px 20px;border-bottom:1px solid rgba(0,0,0,.08)}
+.mc.hl .mch{border-bottom-color:rgba(235,183,0,.15)}
 .mcn{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--g);margin-bottom:8px}
 .mct{font-family:var(--sf);font-size:19px;font-weight:700;color:var(--w);margin-bottom:3px;line-height:1.3}
 .mce{font-size:11px;color:var(--grey)}
 .mcb{padding:20px 24px;flex:1;display:flex;flex-direction:column;gap:0}
-.mci{padding:10px 0;border-bottom:1px solid rgba(20,30,45,.05);display:flex;gap:8px;align-items:flex-start}
+.mci{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:8px;align-items:flex-start}
 .mci:last-child{border-bottom:none}
 .mcbu{width:4px;height:4px;background:var(--g);border-radius:50%;flex-shrink:0;margin-top:8px}
 .mcl{font-size:11px;font-weight:700;color:var(--g2);margin-bottom:2px}
 .mctx{font-size:12px;color:var(--grey);line-height:1.7}
 /* JH 4 COURSES - horizontal */
 .jcsec{background:var(--ink);padding:80px 40px}
-.jcgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(20,30,45,.1);border-radius:12px;overflow:hidden}
-.jcc{background:var(--ink2);border-right:1px solid rgba(20,30,45,.1);padding:28px 24px;display:flex;flex-direction:column;gap:14px}
+.jcgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(0,0,0,.1);border-radius:12px;overflow:hidden}
+.jcc{background:var(--ink2);border-right:1px solid rgba(0,0,0,.1);padding:28px 24px;display:flex;flex-direction:column;gap:14px}
 .jcc:last-child{border-right:none}
-.jcc.ft{background:rgba(201,150,58,.04);border-right-color:rgba(201,150,58,.18)}
+.jcc.ft{background:rgba(235,183,0,.04);border-right-color:rgba(235,183,0,.18)}
 .jcn{width:28px;height:28px;background:var(--gd);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--g2)}
 .jcb{display:inline-flex;font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 9px;border-radius:10px;width:fit-content}
 .jct{font-family:var(--sf);font-size:15px;font-weight:700;color:var(--w);line-height:1.4}
@@ -165,52 +165,52 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .jcprice span{font-size:11px;font-weight:400;color:var(--grey)}
 /* Followup */
 .fusec{background:var(--ink);padding:0 40px 80px}
-.fucard{max-width:var(--mx);margin:0 auto;background:var(--gd);border:1px solid rgba(201,150,58,.2);border-radius:12px;padding:36px 40px}
+.fucard{max-width:var(--mx);margin:0 auto;background:var(--gd);border:1px solid rgba(235,183,0,.2);border-radius:12px;padding:36px 40px}
 .fuh{display:flex;align-items:center;gap:16px;margin-bottom:24px}
 .fuicon{font-size:32px}
 .futit{font-family:var(--sf);font-size:20px;font-weight:700;color:var(--g2);margin-bottom:4px}
 .fusub{font-size:13px;color:var(--grey)}
 .fugrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .fublock{}
-.fubh{font-size:10px;font-weight:700;color:var(--g);letter-spacing:2px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid rgba(201,150,58,.15)}
+.fubh{font-size:10px;font-weight:700;color:var(--g);letter-spacing:2px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid rgba(235,183,0,.15)}
 .fuel{display:flex;flex-direction:column;gap:8px}
-.fue{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#4a545f;line-height:1.6}
+.fue{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#4d4d4d;line-height:1.6}
 .fuc{color:var(--g2);font-size:11px;flex-shrink:0;margin-top:3px}
 /* ELECTIVE */
 .elsec{background:var(--bk);padding:80px 40px}
 .elgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.el{background:var(--ink);border-radius:8px;padding:16px;border:1px solid rgba(20,30,45,.08);transition:border-color .2s}
-.el:hover{border-color:rgba(201,150,58,.25)}
+.el{background:var(--ink);border-radius:8px;padding:16px;border:1px solid rgba(0,0,0,.08);transition:border-color .2s}
+.el:hover{border-color:rgba(235,183,0,.25)}
 .elav{width:32px;height:32px;border-radius:50%;background:var(--gd);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--g2);margin-bottom:9px}
 .elt{font-size:13px;font-weight:700;color:var(--w);margin-bottom:3px;line-height:1.4}
 .eltt{font-size:11px;color:var(--grey)}
 /* PACKAGES */
 .pkgsec{background:var(--ink);padding:80px 40px}
 .pkggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto}
-.pkg{background:var(--ink2);border-radius:12px;border:1px solid rgba(20,30,45,.1);padding:32px;display:flex;flex-direction:column;gap:16px}
-.pkg.hot{border-color:rgba(201,150,58,.4)}
+.pkg{background:var(--ink2);border-radius:12px;border:1px solid rgba(0,0,0,.1);padding:32px;display:flex;flex-direction:column;gap:16px}
+.pkg.hot{border-color:rgba(235,183,0,.4)}
 .pkgt{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--g)}
 .pkgp{font-family:var(--sf);font-size:32px;font-weight:700;color:var(--w)}
 .pkgd{font-size:13px;color:var(--grey);line-height:1.7}
-.pkgdv{height:1px;background:rgba(20,30,45,.08)}
+.pkgdv{height:1px;background:rgba(0,0,0,.08)}
 .pkgfs{display:flex;flex-direction:column;gap:8px;flex:1}
-.pkgf{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#4a545f;line-height:1.6}
+.pkgf{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#4d4d4d;line-height:1.6}
 .pc2{color:var(--g2);font-size:11px;flex-shrink:0;margin-top:2px}
 .ps2{color:var(--g);font-size:11px;flex-shrink:0;margin-top:2px}
 .pkgbtn{padding:12px 18px;border-radius:var(--r);font-size:13px;font-weight:700;border:none;width:100%;margin-top:auto}
 .pbh{background:var(--g);color:#fff}.pbh:hover{background:var(--g2)}
-.pbd{background:rgba(20,30,45,.08);color:var(--w)}.pbd:hover{background:rgba(20,30,45,.16)}
+.pbd{background:rgba(0,0,0,.08);color:var(--w)}.pbd:hover{background:rgba(0,0,0,.16)}
 /* VALUE */
 .valsec{background:var(--bk);padding:80px 40px}
 .valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.valc{background:var(--ink);border-radius:10px;padding:28px;border:1px solid rgba(20,30,45,.08)}
+.valc{background:var(--ink);border-radius:10px;padding:28px;border:1px solid rgba(0,0,0,.08)}
 .valico{font-size:28px;margin-bottom:13px}
 .valt{font-family:var(--sf);font-size:16px;font-weight:700;color:var(--w);margin-bottom:8px}
 .valtx{font-size:13px;color:var(--grey);line-height:1.8}
 /* FAQ */
 .faqsec{background:var(--ink);padding:80px 40px}
 .faqlist{max-width:760px;margin:0 auto}
-.fi{border-bottom:1px solid rgba(20,30,45,.08)}
+.fi{border-bottom:1px solid rgba(0,0,0,.08)}
 .fq{padding:17px 0;font-size:14px;font-weight:700;color:var(--w);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none}
 .fq::after{content:"+";font-size:20px;color:var(--g);flex-shrink:0;transition:transform .3s}
 .fi.open .fq::after{transform:rotate(45deg)}
@@ -220,30 +220,30 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .dirsec{background:var(--bk);padding:80px 40px}
 .dir-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px}
 .dir-tabs{display:flex;gap:8px;flex-wrap:wrap}
-.dtab{font-size:12px;padding:6px 16px;border-radius:20px;border:1px solid rgba(20,30,45,.14);background:transparent;color:var(--grey);cursor:pointer;font-family:var(--ss);transition:all .2s}
+.dtab{font-size:12px;padding:6px 16px;border-radius:20px;border:1px solid rgba(0,0,0,.14);background:transparent;color:var(--grey);cursor:pointer;font-family:var(--ss);transition:all .2s}
 .dtab:hover{border-color:var(--g);color:var(--g2)}.dtab.da{background:var(--g);border-color:var(--g);color:#fff;font-weight:700}
-.dir-search{background:var(--ink2);border:1px solid rgba(20,30,45,.1);border-radius:20px;padding:7px 16px;font-size:13px;color:#1a222e;width:240px;outline:none;font-family:var(--ss)}
+.dir-search{background:var(--ink2);border:1px solid rgba(0,0,0,.1);border-radius:20px;padding:7px 16px;font-size:13px;color:#111111;width:240px;outline:none;font-family:var(--ss)}
 .dir-count{font-size:12px;color:var(--grey);margin-left:8px}
 .artgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.artcard{background:var(--ink);border-radius:8px;padding:16px;border:1px solid rgba(20,30,45,.08);cursor:pointer;transition:all .2s}
-.artcard:hover{border-color:rgba(201,150,58,.3);transform:translateY(-2px)}
+.artcard{background:var(--ink);border-radius:8px;padding:16px;border:1px solid rgba(0,0,0,.08);cursor:pointer;transition:all .2s}
+.artcard:hover{border-color:rgba(235,183,0,.3);transform:translateY(-2px)}
 .artag{font-size:10px;padding:2px 7px;border-radius:4px;background:var(--gd);color:var(--g2);display:inline-block;margin-bottom:7px}
 .artt{font-size:13px;font-weight:700;color:var(--w);line-height:1.5;margin-bottom:4px}
 .arts{font-size:11px;color:var(--g2);margin-bottom:5px;line-height:1.4}
 .artp{font-size:12px;color:var(--grey);line-height:1.65}
 .artm{font-size:11px;color:var(--g);margin-top:9px;font-weight:700}
 .dirpag{display:flex;justify-content:center;gap:5px;margin-top:24px;flex-wrap:wrap}
-.dpbtn{min-width:30px;height:30px;border-radius:5px;border:1px solid rgba(20,30,45,.1);background:transparent;color:var(--grey);cursor:pointer;font-size:12px;font-family:var(--ss)}
+.dpbtn{min-width:30px;height:30px;border-radius:5px;border:1px solid rgba(0,0,0,.1);background:transparent;color:var(--grey);cursor:pointer;font-size:12px;font-family:var(--ss)}
 .dpbtn.da2{background:var(--g);border-color:var(--g);color:#fff;font-weight:700}
 /* Article modal */
-#artModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(15,20,30,.5);overflow-y:auto;padding:40px 20px}
-.aminn{background:#ffffff;border-radius:14px;max-width:640px;width:100%;margin:0 auto;padding:32px;position:relative;border:1px solid rgba(20,30,45,.1)}
-.amcl{position:absolute;top:14px;right:14px;background:rgba(20,30,45,.08);border:1px solid rgba(20,30,45,.14);color:#6a7480;width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;font-family:var(--ss)}
-.amtit{font-family:var(--sf);font-size:18px;font-weight:700;color:#1a222e;line-height:1.4;margin-bottom:5px}
-.amsub{font-size:12px;color:var(--g2);margin-bottom:14px;padding-bottom:13px;border-bottom:1px solid rgba(20,30,45,.08)}
+#artModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);overflow-y:auto;padding:40px 20px}
+.aminn{background:#ffffff;border-radius:14px;max-width:640px;width:100%;margin:0 auto;padding:32px;position:relative;border:1px solid rgba(0,0,0,.1)}
+.amcl{position:absolute;top:14px;right:14px;background:rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.14);color:#6b6b6b;width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;font-family:var(--ss)}
+.amtit{font-family:var(--sf);font-size:18px;font-weight:700;color:#111111;line-height:1.4;margin-bottom:5px}
+.amsub{font-size:12px;color:var(--g2);margin-bottom:14px;padding-bottom:13px;border-bottom:1px solid rgba(0,0,0,.08)}
 .ambody{font-size:14px;color:var(--grey);line-height:2;white-space:pre-wrap}
 /* DIARY BANNER */
-.dbnr{background:linear-gradient(135deg,#f7efe0,var(--bk));border-top:1px solid rgba(201,150,58,.3);border-bottom:1px solid rgba(201,150,58,.3);padding:40px}
+.dbnr{background:linear-gradient(135deg,#fff9dc,var(--bk));border-top:1px solid rgba(235,183,0,.3);border-bottom:1px solid rgba(235,183,0,.3);padding:40px}
 .dbni{max-width:var(--mx);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 /* CTA */
 .ctasec{background:var(--bk);padding:80px 40px;text-align:center}
@@ -252,16 +252,16 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .ctabs{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .bg{background:var(--g);color:#fff;font-size:14px;font-weight:700;padding:13px 34px;border-radius:var(--r);border:none}
 .bg:hover{background:var(--g2)}
-.bo{background:transparent;color:var(--w);font-size:13px;padding:13px 28px;border-radius:var(--r);border:1px solid rgba(20,30,45,.2)}
+.bo{background:transparent;color:var(--w);font-size:13px;padding:13px 28px;border-radius:var(--r);border:1px solid rgba(0,0,0,.2)}
 .ctam{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:16px}
 .ctami{font-size:12px;color:var(--grey)}
-footer{background:var(--ink);padding:26px 40px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(20,30,45,.08);font-size:12px;color:var(--grey);gap:14px;flex-wrap:wrap}
+footer{background:var(--ink);padding:26px 40px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(0,0,0,.08);font-size:12px;color:var(--grey);gap:14px;flex-wrap:wrap}
 footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
 @media(max-width:960px){
   .nav{padding:0 20px}
   .nlinks{display:none}.nham{display:flex}.ncta{display:none}
   .jhtop{grid-template-columns:1fr}.jhpw{flex-wrap:wrap}
-  .mgrid,.jcgrid{grid-template-columns:1fr 1fr}.mc,.jcc{border-right:none;border-bottom:1px solid rgba(20,30,45,.1)}
+  .mgrid,.jcgrid{grid-template-columns:1fr 1fr}.mc,.jcc{border-right:none;border-bottom:1px solid rgba(0,0,0,.1)}
   .elgrid{grid-template-columns:repeat(2,1fr)}.pkggrid{grid-template-columns:1fr}.valgrid{grid-template-columns:1fr}
   .pbi{grid-template-columns:1fr 1fr}.artgrid{grid-template-columns:1fr 1fr}.fugrid{grid-template-columns:1fr}
   .hbot{left:32px;right:32px;bottom:56px}.harr{display:none}.hdots{right:32px;bottom:20px}
@@ -275,40 +275,40 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
   .mrow{grid-template-columns:1fr!important}
   .rgrid{grid-template-columns:1fr!important}
   .bcard{grid-template-columns:1fr!important}
-  .bcard>div:first-child{border-right:none!important;border-bottom:1px solid rgba(20,30,45,.08)!important}
+  .bcard>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.08)!important}
   .bcard>div:last-child>div:last-child{grid-template-columns:1fr 1fr!important;gap:10px!important}
-  .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(20,30,45,.1)!important;padding:24px 22px!important}
+  .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:24px 22px!important}
   .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:22px!important;gap:18px 16px!important}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
 }
 a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:2px;border-radius:2px}
-.consult-modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(15,20,30,.45);backdrop-filter:blur(8px)}
+.consult-modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px)}
 .consult-modal.open{display:flex}
-.consult-box{width:min(560px,100%);max-height:92vh;overflow:auto;background:#ffffff;border:1px solid rgba(201,150,58,.28);border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.14)}
-.consult-head{padding:26px 28px 18px;border-bottom:1px solid rgba(20,30,45,.08);position:relative}
+.consult-box{width:min(560px,100%);max-height:92vh;overflow:auto;background:#ffffff;border:1px solid rgba(235,183,0,.28);border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.14)}
+.consult-head{padding:26px 28px 18px;border-bottom:1px solid rgba(0,0,0,.08);position:relative}
 .consult-ey{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--g2);margin-bottom:8px}
 .consult-title{font-family:var(--sf);font-size:28px;font-weight:900;line-height:1.25;margin-bottom:8px}
 .consult-sub{font-size:13px;color:#5b6b7c;line-height:1.7}
-.consult-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(20,30,45,.16);background:rgba(20,30,45,.05);color:#1a222e;font-size:18px}
+.consult-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.16);background:rgba(0,0,0,.05);color:#111111;font-size:18px}
 .consult-form{padding:22px 28px 28px;display:grid;gap:16px}
 .consult-field{display:grid;gap:8px}
-.consult-field label{font-size:13px;font-weight:700;color:#26303e}
-.consult-field select,.consult-field input,.consult-field textarea{width:100%;border:1px solid rgba(20,30,45,.14);border-radius:8px;background:rgba(20,30,45,.06);color:#1a222e;font:14px/1.6 var(--ss);padding:12px 13px;outline:none}
+.consult-field label{font-size:13px;font-weight:700;color:#222222}
+.consult-field select,.consult-field input,.consult-field textarea{width:100%;border:1px solid rgba(0,0,0,.14);border-radius:8px;background:rgba(0,0,0,.06);color:#111111;font:14px/1.6 var(--ss);padding:12px 13px;outline:none}
 .consult-field textarea{min-height:108px;resize:vertical}
-.consult-field select:focus,.consult-field input:focus,.consult-field textarea:focus{border-color:rgba(232,184,75,.65);box-shadow:0 0 0 3px rgba(201,150,58,.12)}
+.consult-field select:focus,.consult-field input:focus,.consult-field textarea:focus{border-color:rgba(235,183,0,.8);box-shadow:0 0 0 3px rgba(235,183,0,.12)}
 .consult-submit{margin-top:4px;background:var(--g);color:#fff;border:none;border-radius:var(--r);padding:13px 18px;font-size:15px;font-weight:700}
-.consult-note{font-size:11px;color:#6b7684;text-align:center;line-height:1.6}
+.consult-note{font-size:11px;color:#666666;text-align:center;line-height:1.6}
 .consult-success{display:none;padding:28px;text-align:center}
 .consult-success.show{display:block}
 .consult-success-title{font-family:var(--sf);font-size:24px;font-weight:900;color:var(--g2);margin-bottom:8px}
 .consult-gate{padding:22px 28px 28px;display:grid;gap:14px}
 .consult-choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.consult-choice button{border-radius:8px;border:1px solid rgba(20,30,45,.16);background:rgba(20,30,45,.06);color:#1a222e;padding:14px;font-size:13px;font-weight:700;line-height:1.5;text-align:left}
-.consult-choice button:first-child{background:rgba(201,150,58,.18);border-color:rgba(201,150,58,.45);color:#1a222e}
+.consult-choice button{border-radius:8px;border:1px solid rgba(0,0,0,.16);background:rgba(0,0,0,.06);color:#111111;padding:14px;font-size:13px;font-weight:700;line-height:1.5;text-align:left}
+.consult-choice button:first-child{background:rgba(235,183,0,.18);border-color:rgba(235,183,0,.45);color:#111111}
 .consult-old{display:none;padding:22px 28px 28px;text-align:center}
 .consult-old.show{display:block}
 .consult-old-title{font-family:var(--sf);font-size:22px;font-weight:900;color:var(--g2);margin-bottom:8px}
-.consult-share{font-size:12px;color:#5b6b7c;line-height:1.7;padding:12px 14px;background:rgba(20,30,45,.05);border:1px solid rgba(20,30,45,.08);border-radius:8px}
+.consult-share{font-size:12px;color:#5b6b7c;line-height:1.7;padding:12px 14px;background:rgba(0,0,0,.05);border:1px solid rgba(0,0,0,.08);border-radius:8px}
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
@@ -388,22 +388,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
         <div class="hstat-sub">20年亲身创业验证，蒋晖围绕电商老板最核心的三个命题——战略增量、产品壁垒、组织复制，形成了一套完整的商学院体系。不讲理论，只讲在自己500+人公司里跑通过的真实打法。</div>
       </div>
 <!-- 10大理由 - 为什么跟蒋晖学 -->
-      <div style="background:linear-gradient(135deg,rgba(201,150,58,.08),rgba(201,150,58,.03));border:1px solid rgba(201,150,58,.2);border-radius:12px;padding:36px 40px;margin-bottom:3px">
+      <div style="background:linear-gradient(135deg,rgba(235,183,0,.08),rgba(235,183,0,.03));border:1px solid rgba(235,183,0,.2);border-radius:12px;padding:36px 40px;margin-bottom:3px">
         <div style="text-align:center;margin-bottom:28px">
           <h3 style="font-family:var(--sf);font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--w);margin-bottom:14px">为什么跟蒋晖学电商管理？</h3>
-          <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--g2);background:rgba(201,150,58,.12);border:1px solid rgba(201,150,58,.3);border-radius:20px;padding:5px 20px">10 大理由</span>
+          <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--g2);background:rgba(235,183,0,.12);border:1px solid rgba(235,183,0,.3);border-radius:20px;padding:5px 20px">10 大理由</span>
         </div>
         <div class="rgrid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">01</span><div style="font-size:13px;color:#414e60;line-height:1.65">电商企业<b style="color:var(--g2);font-weight:700">客户数行业第一</b>，超 15000 家企业上过课</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">02</span><div style="font-size:13px;color:#414e60;line-height:1.65">蒋晖<b style="color:var(--g2);font-weight:700">从零创办 500 人电商企业</b>，管理跟着实战派学才靠谱</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">03</span><div style="font-size:13px;color:#414e60;line-height:1.65">各行业<b style="color:var(--g2);font-weight:700">数一数二的老板都跟蒋晖学过</b>，亿级企业学员超 3000 家</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">04</span><div style="font-size:13px;color:#414e60;line-height:1.65"><b style="color:var(--g2);font-weight:700">成功企业学员案例数，行业第一</b></div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">05</span><div style="font-size:13px;color:#414e60;line-height:1.65">内容密度高：<b style="color:var(--g2);font-weight:700">三天 800 页 PPT</b> 浓缩全部管理体系，省时间、抓本质</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">06</span><div style="font-size:13px;color:#414e60;line-height:1.65"><b style="color:var(--g2);font-weight:700">唯一围绕业务增长</b>的管理课，不讲纯理论——因为蒋晖最懂业务</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">07</span><div style="font-size:13px;color:#414e60;line-height:1.65">蒋晖一个月只去公司一两次，专门培养<b style="color:var(--g2);font-weight:700">不用天天盯公司的老板</b></div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">08</span><div style="font-size:13px;color:#414e60;line-height:1.65">手把手教你培养<b style="color:var(--g2);font-weight:700">有经营意识、有忠诚度的中层</b>，全是实战心得</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(20,30,45,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">09</span><div style="font-size:13px;color:#414e60;line-height:1.65">别的老师时间都在讲课，<b style="color:var(--g2);font-weight:700">蒋晖 80% 时间在亲自经营企业</b>，经验持续迭代</div></div>
-          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:linear-gradient(135deg,rgba(201,150,58,.12),rgba(201,150,58,.04));border-radius:7px;border:1px solid rgba(201,150,58,.25)"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">10</span><div style="font-size:13px;color:#414e60;line-height:1.65">唯一敢承诺：<b style="color:var(--g2);font-weight:700">首日听完不能帮你赚回 100 万，可退全款</b></div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">01</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">电商企业<b style="color:var(--g2);font-weight:700">客户数行业第一</b>，超 15000 家企业上过课</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">02</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">蒋晖<b style="color:var(--g2);font-weight:700">从零创办 500 人电商企业</b>，管理跟着实战派学才靠谱</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">03</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">各行业<b style="color:var(--g2);font-weight:700">数一数二的老板都跟蒋晖学过</b>，亿级企业学员超 3000 家</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">04</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65"><b style="color:var(--g2);font-weight:700">成功企业学员案例数，行业第一</b></div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">05</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">内容密度高：<b style="color:var(--g2);font-weight:700">三天 800 页 PPT</b> 浓缩全部管理体系，省时间、抓本质</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">06</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65"><b style="color:var(--g2);font-weight:700">唯一围绕业务增长</b>的管理课，不讲纯理论——因为蒋晖最懂业务</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">07</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">蒋晖一个月只去公司一两次，专门培养<b style="color:var(--g2);font-weight:700">不用天天盯公司的老板</b></div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">08</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">手把手教你培养<b style="color:var(--g2);font-weight:700">有经营意识、有忠诚度的中层</b>，全是实战心得</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:rgba(0,0,0,.04);border-radius:7px"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">09</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">别的老师时间都在讲课，<b style="color:var(--g2);font-weight:700">蒋晖 80% 时间在亲自经营企业</b>，经验持续迭代</div></div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:linear-gradient(135deg,rgba(235,183,0,.12),rgba(235,183,0,.04));border-radius:7px;border:1px solid rgba(235,183,0,.25)"><span style="font-family:var(--sf);font-size:17px;font-weight:700;color:var(--g2);flex-shrink:0;width:24px">10</span><div style="font-size:13px;color:#3d3d3d;line-height:1.65">唯一敢承诺：<b style="color:var(--g2);font-weight:700">首日听完不能帮你赚回 100 万，可退全款</b></div></div>
         </div>
         <div style="text-align:center;margin-top:24px">
           <p style="font-size:12px;color:var(--grey);margin-bottom:16px">这些不是包装出来的卖点，是蒋晖 20 年一线经营沉淀的真实底气。</p>
@@ -415,120 +415,120 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
         <div class="tey">听听学员怎么说</div>
         <div style="position:relative;overflow:hidden">
           <div id="reviewTrack" style="display:flex;gap:16px;transition:transform .5s ease;will-change:transform">
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">知</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">知</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">知识付费</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">多赚1000万</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「我是第一次听超级战略，我认为最少可以在未来帮我们公司多赚1000万。本身对于战略的这个点是非常薄弱的，这一次学习完以后，也不像以前那么迷茫了，也知道接下来我们公司如何进行十倍级的增长，我也非常期待通过这一次的学习，我更加坚定不移的要跟着蒋老师长期的往前走。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">皮</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">皮</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">皮具箱包</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">翻出几倍业务体量</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「超级战略是第一次听，这次蒋老师讲的这个战略问题，能更高效的帮我们去选择正确的路。我们现有的资源不断的深挖，还可以翻出几倍的业务体量。我们团队原来计划搭建30人的团队，现在大概十个人就能做到同样的效果。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">内</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">内</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">内衣类目</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">天花板从几亿到几十亿</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「原先我没参加商学院的课之前，我感觉做到一两个亿是我的天花板，我一直在想怎么突破。听了蒋老师的这个战略课之后，我终于知道了另一条路，这样我的天花板就可能是在几十亿上面去想的，这是商学院对我认知的拔升最大的感触。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">女</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">女</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">女装类目</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">运营提效30%+</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「我是一直跟着蒋晖老师学习，因为产品比较重要，而我们团队内部缺乏产品这个核心的能力，所以以来找蒋晖老师学习一下，看下回去怎么落地。学完之后回去我觉得运营提效至少30%以上，他讲了这么多的点，我们回去可能落地几个点作用都很大。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">农</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">农</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">农资产品</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">业绩涨20-30%</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「之前我们是很粗暴的选品抄跟品，但是这一次来猫课听的蒋老师的这个课，他给了我们很多不同的维度，不同的思路。这是我第三次来听课了，业绩方面涨了有20%到30%的样子。我们整个组织整个公司会更有协同性，战斗力更加强。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">跨</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">跨</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">跨境电商</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">利润有望翻倍</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「这一次来商学院觉得启发很大。首先从人效方面，因为我们人效达到了5倍，所以以我一直很纠结找我到底在哪个方面能更进一步的做提升。上了蒋老师的课之后，我发现涨10%可能提高一倍的利润。蒋老师的这个课，能让你在每个点上面知道到底哪一步做对了。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">饰</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">饰</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">饰品类目</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">价值无可估量</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「蒋晖老师超级组织课，里面讲了很多内容，从管理到组织，怎么聚焦资源等等，其中印象最深的是讲到企业文化，从愿景到使命，到企业文化要怎么提炼才能符合团队的思想。我认为能领悟这份课程的价值的人，他不是用10万20万来衡量的，它是无价的。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">小</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">小</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">小众服装</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">经营越来越省心</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「这次讲的组织，非常长期价值，从组织的组成运转、小组内的人员安排、座位安排等都讲得清清楚楚，让团队被激活了，经营公司越来越省心。期待1年后在公司的时间减少3分之2，公司经营越来越好，给自己定个目标。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">宠</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">宠</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">宠物用品</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">转化率人效双提升</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「商学院可以对管理课进行一个深入补充，上课之后首先我们的转化率跟人效有提高。因为校长提到要精准地聚焦S，然后找到人效的高ROI，所以我们现在做一个动作就是要考虑这个问题，只要不是这个问题让你多赚几十万的话，我们是不会去动的。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">某</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">某</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">某服饰Top10</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">净利润翻3倍</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「流水没怎么涨，但整体净利润翻了三倍，组织也完全听指挥了。跟蒋老师死磕了高标准薪酬体系，彻底废除提成制，改用高底薪筛选S级人才，配合严格的过程KPI。以前那种占山为王再也没有了。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">美</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">美</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">美妆大健康</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">库存降八成</div>
               </div>
               <div style="font-size:12px;color:#5b6b7c;line-height:1.75;font-style:italic">「蒋老师用SABC分析法帮我们复盘，一眼看出80%的新品都是吸干精力的B/C级毒瘤。库存降了八成，开品变成了确定性的数学公式，再也没亏过。」</div>
             </div>
-            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(20,30,45,.08)">
+            <div style="flex:0 0 340px;background:var(--ink2);border-radius:12px;padding:22px;border:1px solid rgba(0,0,0,.08)">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                 <div style="display:flex;align-items:center;gap:10px">
-                  <div style="width:34px;height:34px;background:rgba(201,150,58,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">小</div>
+                  <div style="width:34px;height:34px;background:rgba(235,183,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--g2);flex-shrink:0">小</div>
                   <div style="font-size:12px;font-weight:700;color:var(--w)">小家电转型</div>
                 </div>
                 <div style="font-size:10px;font-weight:700;color:var(--g);background:var(--gd);padding:2px 8px;border-radius:4px;white-space:nowrap">ROI暴涨</div>
@@ -538,11 +538,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
           </div>
         </div>
         <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:16px">
-          <button onclick="reviewPrev()" style="background:rgba(20,30,45,.08);border:1px solid rgba(20,30,45,.16);color:#1a222e;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">‹</button>
+          <button onclick="reviewPrev()" style="background:rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.16);color:#111111;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">‹</button>
           <span style="font-size:12px;color:var(--grey)" id="reviewDots"></span>
-          <button onclick="reviewNext()" style="background:rgba(20,30,45,.08);border:1px solid rgba(20,30,45,.16);color:#1a222e;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">›</button>
+          <button onclick="reviewNext()" style="background:rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.16);color:#111111;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">›</button>
         </div>
-        <div style="font-size:11px;color:#334455;margin-top:10px;font-style:italic;text-align:center">以上均为真实学员反馈，头像/Logo待替换为实际资源</div>
+        <div style="font-size:11px;color:#333333;margin-top:10px;font-style:italic;text-align:center">以上均为真实学员反馈，头像/Logo待替换为实际资源</div>
       </div>
       <!-- Videos -->
       <div>
@@ -569,8 +569,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
     <div style="display:flex;flex-direction:column;gap:3px">
 
       <!-- 方法01 - 金色主题 -->
-      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(201,150,58,.12),rgba(201,150,58,.04));border:1px solid rgba(201,150,58,.25);border-radius:10px;overflow:hidden">
-        <div style="padding:36px 32px;border-right:1px solid rgba(201,150,58,.2);display:flex;flex-direction:column;justify-content:center;background:rgba(201,150,58,.06)">
+      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(235,183,0,.12),rgba(235,183,0,.04));border:1px solid rgba(235,183,0,.25);border-radius:10px;overflow:hidden">
+        <div style="padding:36px 32px;border-right:1px solid rgba(235,183,0,.2);display:flex;flex-direction:column;justify-content:center;background:rgba(235,183,0,.06)">
           <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--g);margin-bottom:10px">原创方法 01</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">关键指标薪酬</div>
           <div style="width:32px;height:3px;background:var(--g);border-radius:2px"></div>
@@ -583,53 +583,53 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
       </div>
 
       <!-- 方法02 - 蓝色主题 -->
-      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(64,120,200,.1),rgba(64,120,200,.03));border:1px solid rgba(64,120,200,.2);border-radius:10px;overflow:hidden">
-        <div style="padding:36px 32px;border-right:1px solid rgba(64,120,200,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(64,120,200,.06)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#3565b8;margin-bottom:10px">原创方法 02</div>
+      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(224,32,32,.1),rgba(224,32,32,.03));border:1px solid rgba(224,32,32,.2);border-radius:10px;overflow:hidden">
+        <div style="padding:36px 32px;border-right:1px solid rgba(224,32,32,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(224,32,32,.06)">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#e02020;margin-bottom:10px">原创方法 02</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">战略四格</div>
-          <div style="width:32px;height:3px;background:#3565b8;border-radius:2px"></div>
+          <div style="width:32px;height:3px;background:#e02020;border-radius:2px"></div>
         </div>
         <div style="padding:26px 32px">
           <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:10px;align-items:stretch">
             <div></div>
-            <div style="text-align:center;font-size:13px;font-weight:700;color:#3565b8;letter-spacing:2px;padding:2px 0">流 量</div>
-            <div style="text-align:center;font-size:13px;font-weight:700;color:#3565b8;letter-spacing:2px;padding:2px 0">产 品</div>
-            <div style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#3565b8;background:rgba(100,150,255,.05);border:1px solid rgba(100,150,255,.12);border-radius:8px;padding:8px 4px;line-height:1.5">内部<br>能力</div>
-            <div style="background:rgba(201,150,58,.08);border-radius:8px;padding:14px;border:1px solid rgba(201,150,58,.15)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">核心流量能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">深挖团队长板，构建无法被复制的流量护城河</div></div>
-            <div style="background:rgba(201,150,58,.08);border-radius:8px;padding:14px;border:1px solid rgba(201,150,58,.15)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">产品核心能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">死磕产品研发、功能差异化或供应链独占壁垒</div></div>
-            <div style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#3565b8;background:rgba(100,150,255,.05);border:1px solid rgba(100,150,255,.12);border-radius:8px;padding:8px 4px;line-height:1.5">外部<br>机会</div>
-            <div style="background:rgba(100,150,255,.05);border-radius:8px;padding:14px;border:1px solid rgba(100,150,255,.12)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">流量风口</div><div style="font-size:11px;color:var(--grey);line-height:1.6">敏锐捕捉平台红利、算法更迭，极致变现</div></div>
-            <div style="background:rgba(100,150,255,.05);border-radius:8px;padding:14px;border:1px solid rgba(100,150,255,.12)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">产品风口</div><div style="font-size:11px;color:var(--grey);line-height:1.6">借势跨界流行元素，快速重组爆品，切入高利润场景</div></div>
+            <div style="text-align:center;font-size:13px;font-weight:700;color:#e02020;letter-spacing:2px;padding:2px 0">流 量</div>
+            <div style="text-align:center;font-size:13px;font-weight:700;color:#e02020;letter-spacing:2px;padding:2px 0">产 品</div>
+            <div style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#e02020;background:rgba(224,32,32,.05);border:1px solid rgba(224,32,32,.12);border-radius:8px;padding:8px 4px;line-height:1.5">内部<br>能力</div>
+            <div style="background:rgba(235,183,0,.08);border-radius:8px;padding:14px;border:1px solid rgba(235,183,0,.15)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">核心流量能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">深挖团队长板，构建无法被复制的流量护城河</div></div>
+            <div style="background:rgba(235,183,0,.08);border-radius:8px;padding:14px;border:1px solid rgba(235,183,0,.15)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">产品核心能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">死磕产品研发、功能差异化或供应链独占壁垒</div></div>
+            <div style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#e02020;background:rgba(224,32,32,.05);border:1px solid rgba(224,32,32,.12);border-radius:8px;padding:8px 4px;line-height:1.5">外部<br>机会</div>
+            <div style="background:rgba(224,32,32,.05);border-radius:8px;padding:14px;border:1px solid rgba(224,32,32,.12)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">流量风口</div><div style="font-size:11px;color:var(--grey);line-height:1.6">敏锐捕捉平台红利、算法更迭，极致变现</div></div>
+            <div style="background:rgba(224,32,32,.05);border-radius:8px;padding:14px;border:1px solid rgba(224,32,32,.12)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">产品风口</div><div style="font-size:11px;color:var(--grey);line-height:1.6">借势跨界流行元素，快速重组爆品，切入高利润场景</div></div>
           </div>
         </div>
       </div>
 
       <!-- 方法03 - 绿色主题 -->
-      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(60,160,100,.1),rgba(60,160,100,.03));border:1px solid rgba(60,160,100,.2);border-radius:10px;overflow:hidden">
-        <div style="padding:36px 32px;border-right:1px solid rgba(60,160,100,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(60,160,100,.06)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#2c8a58;margin-bottom:10px">原创方法 03</div>
+      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(17,17,17,.1),rgba(17,17,17,.03));border:1px solid rgba(17,17,17,.2);border-radius:10px;overflow:hidden">
+        <div style="padding:36px 32px;border-right:1px solid rgba(17,17,17,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(17,17,17,.06)">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#111111;margin-bottom:10px">原创方法 03</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">小组制</div>
-          <div style="width:32px;height:3px;background:#2c8a58;border-radius:2px"></div>
+          <div style="width:32px;height:3px;background:#111111;border-radius:2px"></div>
         </div>
         <div style="padding:32px 36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
-          <div><div style="font-size:13px;font-weight:700;color:#2c8a58;margin-bottom:7px">组织打散</div><div style="font-size:13px;color:var(--grey);line-height:1.7">拆分为3-6人（10人封顶）的敏捷战术细胞，打破传统金字塔大部门和割裂的层级</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#2c8a58;margin-bottom:7px">自我运营</div><div style="font-size:13px;color:var(--grey);line-height:1.7">前台按渠道或产品独立建制，全面推行OKR策略训练，策略与执行彻底分开</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#2c8a58;margin-bottom:7px">大公司拆成小老板</div><div style="font-size:13px;color:var(--grey);line-height:1.7">让最听得见炮火的小组长自主算账、自主寻找赢的路径，组织极度扁平</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#111111;margin-bottom:7px">组织打散</div><div style="font-size:13px;color:var(--grey);line-height:1.7">拆分为3-6人（10人封顶）的敏捷战术细胞，打破传统金字塔大部门和割裂的层级</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#111111;margin-bottom:7px">自我运营</div><div style="font-size:13px;color:var(--grey);line-height:1.7">前台按渠道或产品独立建制，全面推行OKR策略训练，策略与执行彻底分开</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#111111;margin-bottom:7px">大公司拆成小老板</div><div style="font-size:13px;color:var(--grey);line-height:1.7">让最听得见炮火的小组长自主算账、自主寻找赢的路径，组织极度扁平</div></div>
         </div>
       </div>
 
       <!-- 方法04 - 红色主题 -->
-      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(200,80,60,.1),rgba(200,80,60,.03));border:1px solid rgba(200,80,60,.2);border-radius:10px;overflow:hidden">
-        <div style="padding:36px 32px;border-right:1px solid rgba(200,80,60,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(200,80,60,.06)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#c14f3e;margin-bottom:10px">原创方法 04</div>
+      <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(224,32,32,.1),rgba(224,32,32,.03));border:1px solid rgba(224,32,32,.2);border-radius:10px;overflow:hidden">
+        <div style="padding:36px 32px;border-right:1px solid rgba(224,32,32,.15);display:flex;flex-direction:column;justify-content:center;background:rgba(224,32,32,.06)">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#e02020;margin-bottom:10px">原创方法 04</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">SABC人才法则</div>
-          <div style="width:32px;height:3px;background:#c14f3e;border-radius:2px"></div>
+          <div style="width:32px;height:3px;background:#e02020;border-radius:2px"></div>
         </div>
         <div style="padding:32px 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
-          <div style="background:linear-gradient(135deg,rgba(201,150,58,.18),rgba(201,150,58,.06));border-radius:10px;padding:18px;border:1px solid rgba(201,150,58,.3)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:var(--g2);margin-bottom:8px">S</div><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">顶尖人才 · 打新仗</div><div style="font-size:11px;color:var(--grey);line-height:1.6">公司最核心的顶尖人才，专攻 0 到 1 的核心创新，把新仗打赢，并把跑通的打法梳理成标准 SOP</div></div>
-          <div style="background:rgba(20,30,45,.05);border-radius:10px;padding:18px;border:1px solid rgba(20,30,45,.1)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#5b6b7c;margin-bottom:8px">A</div><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">复制 · 迭代</div><div style="font-size:11px;color:var(--grey);line-height:1.6">复制 S 级人才跑通的策略，并在 S 级策略的基础上持续迭代优化</div></div>
-          <div style="background:rgba(20,30,45,.03);border-radius:10px;padding:18px;border:1px solid rgba(20,30,45,.06)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#556677;margin-bottom:8px">B</div><div style="font-size:12px;font-weight:700;color:#6a7480;margin-bottom:5px">清单式执行</div><div style="font-size:11px;color:#556677;line-height:1.6">执行标准化 SOP，按清单做执行管理，保证稳定产出</div></div>
-          <div style="background:rgba(200,60,60,.06);border-radius:10px;padding:18px;border:1px solid rgba(200,60,60,.15)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#aa5555;margin-bottom:8px">C</div><div style="font-size:12px;font-weight:700;color:#6a7480;margin-bottom:5px">坚决淘汰 · 快速淘汰</div><div style="font-size:11px;color:#556677;line-height:1.6">C 级人才坚决淘汰、快速淘汰，资源永远留给能打胜仗的人</div></div>
+          <div style="background:linear-gradient(135deg,rgba(235,183,0,.18),rgba(235,183,0,.06));border-radius:10px;padding:18px;border:1px solid rgba(235,183,0,.3)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:var(--g2);margin-bottom:8px">S</div><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">顶尖人才 · 打新仗</div><div style="font-size:11px;color:var(--grey);line-height:1.6">公司最核心的顶尖人才，专攻 0 到 1 的核心创新，把新仗打赢，并把跑通的打法梳理成标准 SOP</div></div>
+          <div style="background:rgba(0,0,0,.05);border-radius:10px;padding:18px;border:1px solid rgba(0,0,0,.1)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#5b6b7c;margin-bottom:8px">A</div><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">复制 · 迭代</div><div style="font-size:11px;color:var(--grey);line-height:1.6">复制 S 级人才跑通的策略，并在 S 级策略的基础上持续迭代优化</div></div>
+          <div style="background:rgba(0,0,0,.03);border-radius:10px;padding:18px;border:1px solid rgba(0,0,0,.06)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#555555;margin-bottom:8px">B</div><div style="font-size:12px;font-weight:700;color:#6b6b6b;margin-bottom:5px">清单式执行</div><div style="font-size:11px;color:#555555;line-height:1.6">执行标准化 SOP，按清单做执行管理，保证稳定产出</div></div>
+          <div style="background:rgba(224,32,32,.06);border-radius:10px;padding:18px;border:1px solid rgba(224,32,32,.15)"><div style="font-family:var(--sf);font-size:32px;font-weight:900;color:#c11616;margin-bottom:8px">C</div><div style="font-size:12px;font-weight:700;color:#6b6b6b;margin-bottom:5px">坚决淘汰 · 快速淘汰</div><div style="font-size:11px;color:#555555;line-height:1.6">C 级人才坚决淘汰、快速淘汰，资源永远留给能打胜仗的人</div></div>
         </div>
       </div>
 
@@ -641,7 +641,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 <div class="dv"></div>
 <section style="background:var(--bk);padding:72px 40px" id="diary">
   <div class="si">
-    <p style="max-width:720px;padding-bottom:24px;margin-bottom:30px;border-bottom:1px solid rgba(20,30,45,.08);font-size:15px;line-height:1.85;color:#5b6b7c">看完四大原创方法，想<span style="color:var(--g2);font-weight:600">了解蒋晖更多的经营管理理念</span>？下面是他连续 4 年写下的一线经营笔记——每天一篇真实思考，把每个方法背后的逻辑讲透。</p>
+    <p style="max-width:720px;padding-bottom:24px;margin-bottom:30px;border-bottom:1px solid rgba(0,0,0,.08);font-size:15px;line-height:1.85;color:#5b6b7c">看完四大原创方法，想<span style="color:var(--g2);font-weight:600">了解蒋晖更多的经营管理理念</span>？下面是他连续 4 年写下的一线经营笔记——每天一篇真实思考，把每个方法背后的逻辑讲透。</p>
     <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px">
       <div>
         <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:var(--g2);margin-bottom:10px">蒋晖经营管理笔记</div>
@@ -650,22 +650,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap" id="dirTabBar">
         <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:var(--g);border:1px solid var(--g);color:#fff;font-weight:700;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'all')">全部</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'战略利润')">战略利润</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'组织管理')">组织管理</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'薪酬绩效')">薪酬绩效</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'绩效考核')">绩效考核</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'老板认知')">老板认知</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'产品选品')">产品选品</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'AI效率')">AI效率</button>
-        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(20,30,45,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'管理思考')">管理思考</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'战略利润')">战略利润</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'组织管理')">组织管理</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'薪酬绩效')">薪酬绩效</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'绩效考核')">绩效考核</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'老板认知')">老板认知</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'产品选品')">产品选品</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'AI效率')">AI效率</button>
+        <button style="font-size:12px;padding:5px 14px;border-radius:20px;background:transparent;border:1px solid rgba(0,0,0,.16);color:#5b6b7c;cursor:pointer;font-family:var(--ss)" onclick="dirTab(this,'管理思考')">管理思考</button>
       </div>
     </div>
     <div style="display:flex;gap:8px;align-items:center;margin-bottom:20px">
-      <input style="background:var(--ink2);border:1px solid rgba(20,30,45,.1);border-radius:20px;padding:7px 16px;font-size:13px;color:#1a222e;width:260px;outline:none;font-family:var(--ss)" type="text" placeholder="搜索笔记标题..." oninput="dirSearch(this.value)" id="dirSearchInput">
+      <input style="background:var(--ink2);border:1px solid rgba(0,0,0,.1);border-radius:20px;padding:7px 16px;font-size:13px;color:#111111;width:260px;outline:none;font-family:var(--ss)" type="text" placeholder="搜索笔记标题..." oninput="dirSearch(this.value)" id="dirSearchInput">
       <span style="font-size:12px;color:#5b6b7c" id="dirCnt"></span>
     </div>
     <!-- Directory list -->
-    <div style="border:1px solid rgba(20,30,45,.08);border-radius:10px;overflow:hidden;background:var(--ink)">
+    <div style="border:1px solid rgba(0,0,0,.08);border-radius:10px;overflow:hidden;background:var(--ink)">
       <div id="dirList" style="max-height:520px;overflow-y:auto"></div>
     </div>
     <div style="display:flex;justify-content:center;gap:6px;margin-top:16px" id="dirPag"></div>
@@ -682,12 +682,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
     <div style="display:flex;flex-direction:column;gap:3px">
 
       <!-- 课程01 - 旗舰课，金色突出 -->
-      <div class="bcard" style="display:grid;grid-template-columns:320px 1fr;background:linear-gradient(135deg,rgba(201,150,58,.15),rgba(201,150,58,.05));border:2px solid rgba(201,150,58,.4);border-radius:12px;overflow:hidden;position:relative">
+      <div class="bcard" style="display:grid;grid-template-columns:320px 1fr;background:linear-gradient(135deg,rgba(235,183,0,.15),rgba(235,183,0,.05));border:2px solid rgba(235,183,0,.4);border-radius:12px;overflow:hidden;position:relative">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--g),var(--g2))"></div>
-        <div style="padding:40px 32px;border-right:1px solid rgba(201,150,58,.2);display:flex;flex-direction:column;justify-content:center;gap:12px">
+        <div style="padding:40px 32px;border-right:1px solid rgba(235,183,0,.2);display:flex;flex-direction:column;justify-content:center;gap:12px">
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <div style="background:var(--g);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px">旗舰课程</div>
-            <div style="background:var(--gd);color:var(--g);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;border:1px solid rgba(201,150,58,.35)">老板必学</div>
+            <div style="background:var(--gd);color:var(--g);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;border:1px solid rgba(235,183,0,.35)">老板必学</div>
           </div>
           <div style="font-family:var(--sf);font-size:24px;font-weight:700;color:var(--w);line-height:1.3">电商战略<br>管理落地班</div>
           <div style="font-size:12px;color:var(--grey)">📍 杭州 · 广州 · 深圳 · 每月开课</div>
@@ -700,12 +700,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
         <div style="padding:36px 40px">
           <div style="font-size:11px;font-weight:700;color:var(--g);letter-spacing:1px;margin-bottom:18px">课程内容 · 三天六大模块 · 蒋晖亲授</div>
           <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">薪酬设计</div><div style="font-size:11px;color:var(--grey);line-height:1.6">彻底废除提成制，建立高底薪高标准体系，让收入与价值精准对应</div></div>
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">绩效考核</div><div style="font-size:11px;color:var(--grey);line-height:1.6">动态指标四步骤，持续拉升团队标准，让员工自驱而非靠盯</div></div>
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">战略增量</div><div style="font-size:11px;color:var(--grey);line-height:1.6">战略四格实战，找到下一个确定性利润方向</div></div>
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">组织复制</div><div style="font-size:11px;color:var(--grey);line-height:1.6">小组制落地实操，把老板从业务中真正解放出来</div></div>
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">中层复制</div><div style="font-size:11px;color:var(--grey);line-height:1.6">SABC法则落地，人才分级动态管理，常态化淘汰机制</div></div>
-            <div style="background:rgba(20,30,45,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">招人选人</div><div style="font-size:11px;color:var(--grey);line-height:1.6">筛选机制与高标准文化建立，用机制替代人治</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">薪酬设计</div><div style="font-size:11px;color:var(--grey);line-height:1.6">彻底废除提成制，建立高底薪高标准体系，让收入与价值精准对应</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">绩效考核</div><div style="font-size:11px;color:var(--grey);line-height:1.6">动态指标四步骤，持续拉升团队标准，让员工自驱而非靠盯</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">战略增量</div><div style="font-size:11px;color:var(--grey);line-height:1.6">战略四格实战，找到下一个确定性利润方向</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">组织复制</div><div style="font-size:11px;color:var(--grey);line-height:1.6">小组制落地实操，把老板从业务中真正解放出来</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">中层复制</div><div style="font-size:11px;color:var(--grey);line-height:1.6">SABC法则落地，人才分级动态管理，常态化淘汰机制</div></div>
+            <div style="background:rgba(0,0,0,.05);border-radius:8px;padding:14px;border-left:3px solid var(--g)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">招人选人</div><div style="font-size:11px;color:var(--grey);line-height:1.6">筛选机制与高标准文化建立，用机制替代人治</div></div>
           
 </div>
         </div>
@@ -723,7 +723,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 <span style="white-space:nowrap">管理打底 · 商学院进阶</span>
 <span style="width:40px;height:1px;background:linear-gradient(90deg,var(--g2),transparent)"></span>
 </div>
-<p style="font-size:15px;line-height:1.85;color:#5b6b7c;max-width:640px;margin:0 auto 22px">《电商战略管理落地班》是老板的第一课。打好<span style="color:#1a222e;font-weight:600">管理地基</span>之后，猫课商学院用<span style="color:var(--g2);font-weight:600">五层战略组织系统</span>帮你把方法装进企业：三门核心课（超级战略 · 超级产品 · 超级组织）、月度管理复盘会、AI 管理工作台，外加 9 门业务选修课。</p>
+<p style="font-size:15px;line-height:1.85;color:#5b6b7c;max-width:640px;margin:0 auto 22px">《电商战略管理落地班》是老板的第一课。打好<span style="color:#111111;font-weight:600">管理地基</span>之后，猫课商学院用<span style="color:var(--g2);font-weight:600">五层战略组织系统</span>帮你把方法装进企业：三门核心课（超级战略 · 超级产品 · 超级组织）、月度管理复盘会、AI 管理工作台，外加 9 门业务选修课。</p>
 <a href="shangxueyuan.html"><button class="bg" style="font-size:14px;padding:13px 32px">了解猫课商学院 →</button></a>
 </div>
 </section>
@@ -808,7 +808,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
     <div class="amtit" id="amTitle"></div>
     <div class="amsub" id="amSub"></div>
     <div class="ambody" id="amBody"></div>
-    <div style="margin-top:20px;padding:16px;background:var(--gd);border-radius:8px;border:1px solid rgba(201,150,58,.15);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
+    <div style="margin-top:20px;padding:16px;background:var(--gd);border-radius:8px;border:1px solid rgba(235,183,0,.15);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
       <div style="display:flex;align-items:flex-start;gap:12px;min-width:240px;flex:1">
         <div style="font-size:20px">??</div>
         <div><div style="font-size:13px;font-weight:700;color:var(--g2);margin-bottom:3px">添加蒋晖老师微信，领取内部管理资料包</div><div style="font-size:11px;color:var(--grey);line-height:1.6">新朋友可免费领取《老板不上班，员工主动干》管理机制、绩效考核思路和蒋晖经营管理笔记精选。</div></div>
@@ -925,7 +925,7 @@ let dCurTag='all', dCurQ='', dCurPg=1;
 
 function dirTab(btn, tag){
   document.querySelectorAll('#dirTabBar button').forEach(b=>{
-    b.style.background='transparent'; b.style.borderColor='rgba(20,30,45,.16)';
+    b.style.background='transparent'; b.style.borderColor='rgba(0,0,0,.16)';
     b.style.color='#5b6b7c'; b.style.fontWeight='400';
   });
   btn.style.background='var(--g)'; btn.style.borderColor='var(--g)';
@@ -947,13 +947,13 @@ function dirRender(){
   const s=(dCurPg-1)*DPAGE, pg=f.slice(s,s+DPAGE);
   const list=document.getElementById('dirList');
   list.innerHTML=pg.map((a,idx)=>`
-    <div onclick="openDirArt(${a._i})" style="display:flex;align-items:baseline;gap:12px;padding:11px 18px;border-bottom:1px solid rgba(20,30,45,.05);cursor:pointer;transition:background .15s" onmouseenter="this.style.background='rgba(20,30,45,.04)'" onmouseleave="this.style.background='transparent'">
+    <div onclick="openDirArt(${a._i})" style="display:flex;align-items:baseline;gap:12px;padding:11px 18px;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer;transition:background .15s" onmouseenter="this.style.background='rgba(0,0,0,.04)'" onmouseleave="this.style.background='transparent'">
       <span style="font-size:11px;color:var(--g);font-weight:700;flex-shrink:0;width:20px;text-align:right">${s+idx+1}</span>
       <div style="flex:1;min-width:0">
-        <div style="font-size:13px;font-weight:600;color:#2e3947;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${a.title}</div>
+        <div style="font-size:13px;font-weight:600;color:#2b2b2b;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${a.title}</div>
         ${a.subtitle?`<div style="font-size:11px;color:var(--g);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${a.subtitle}</div>`:''}
       </div>
-      <div style="display:flex;gap:4px;flex-shrink:0">${(a.tags||[]).slice(0,1).map(t=>`<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:rgba(201,150,58,.1);color:var(--g2)">${t}</span>`).join('')}</div>
+      <div style="display:flex;gap:4px;flex-shrink:0">${(a.tags||[]).slice(0,1).map(t=>`<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:rgba(235,183,0,.1);color:var(--g2)">${t}</span>`).join('')}</div>
       <span style="font-size:11px;color:var(--g);flex-shrink:0">阅读 →</span>
     </div>`).join('');
   dirRenderPag(f.length);
@@ -962,20 +962,20 @@ function dirRenderPag(total){
   const pages=Math.ceil(total/DPAGE);
   const pg=document.getElementById('dirPag');
   if(pages<=1){pg.innerHTML='';return;}
-  let h=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid rgba(20,30,45,.1);background:transparent;color:#5b6b7c;cursor:pointer;font-size:12px" onclick="dirGo(${dCurPg-1})" ${dCurPg===1?'disabled':''}>‹</button>`;
+  let h=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid rgba(0,0,0,.1);background:transparent;color:#5b6b7c;cursor:pointer;font-size:12px" onclick="dirGo(${dCurPg-1})" ${dCurPg===1?'disabled':''}>‹</button>`;
   for(let p=1;p<=pages;p++){
     if(p===1||p===pages||Math.abs(p-dCurPg)<=1)
-      h+=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid ${p===dCurPg?'var(--g)':'rgba(20,30,45,.1)'};background:${p===dCurPg?'var(--g)':'transparent'};color:${p===dCurPg?'#fff':'#5b6b7c'};cursor:pointer;font-size:12px;font-weight:${p===dCurPg?'700':'400'}" onclick="dirGo(${p})">${p}</button>`;
+      h+=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid ${p===dCurPg?'var(--g)':'rgba(0,0,0,.1)'};background:${p===dCurPg?'var(--g)':'transparent'};color:${p===dCurPg?'#fff':'#5b6b7c'};cursor:pointer;font-size:12px;font-weight:${p===dCurPg?'700':'400'}" onclick="dirGo(${p})">${p}</button>`;
     else if(Math.abs(p-dCurPg)===2)
-      h+=`<span style="color:#556677;padding:0 2px;line-height:28px;font-size:12px">…</span>`;
+      h+=`<span style="color:#555555;padding:0 2px;line-height:28px;font-size:12px">…</span>`;
   }
-  h+=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid rgba(20,30,45,.1);background:transparent;color:#5b6b7c;cursor:pointer;font-size:12px" onclick="dirGo(${dCurPg+1})" ${dCurPg===pages?'disabled':''}>›</button>`;
+  h+=`<button style="min-width:28px;height:28px;border-radius:5px;border:1px solid rgba(0,0,0,.1);background:transparent;color:#5b6b7c;cursor:pointer;font-size:12px" onclick="dirGo(${dCurPg+1})" ${dCurPg===pages?'disabled':''}>›</button>`;
   pg.innerHTML=h;
 }
 function dirGo(p){dCurPg=p;dirRender();document.getElementById('diary').scrollIntoView({behavior:'smooth',block:'start'});}
 function openDirArt(i){
   const a=DC[i]; if(!a)return;
-  document.getElementById('amTags').innerHTML=(a.tags||[]).map(t=>`<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:rgba(201,150,58,.1);color:var(--g2)">${t}</span>`).join(' ');
+  document.getElementById('amTags').innerHTML=(a.tags||[]).map(t=>`<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:rgba(235,183,0,.1);color:var(--g2)">${t}</span>`).join(' ');
   document.getElementById('amTitle').textContent=a.title;
   document.getElementById('amSub').textContent=a.subtitle||'';
   document.getElementById('amBody').textContent=DF[i]||'';
