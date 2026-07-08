@@ -270,19 +270,22 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
 @media(max-width:600px){
   .mgrid,.jcgrid{grid-template-columns:1fr}.elgrid{grid-template-columns:1fr 1fr}
   .jhst{grid-template-columns:repeat(2,1fr)}.artgrid{grid-template-columns:1fr}.hbot{left:20px;right:20px}
-  .vrow{grid-template-columns:1fr}.sec{padding:60px 20px}.jhs{padding:56px 20px}
+  .vrow{grid-template-columns:1fr}.sec{padding:60px 14px}.msec{padding:56px 14px}.jhs{padding:56px 14px}
   .nb>div:last-child div{display:none}
   .mrow{grid-template-columns:1fr!important}
   .rgrid{grid-template-columns:1fr!important}
   .bcard{grid-template-columns:1fr!important}
   .bcard>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.08)!important}
   .bcard>div:last-child>div:last-child{grid-template-columns:1fr 1fr!important;gap:10px!important}
-  .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:24px 22px!important}
-  .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:22px!important;gap:18px 16px!important}
+  .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:20px 16px!important}
+  .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px 12px!important}
   .dtag{display:none!important}
   .stl[style*="clamp(40px"]{font-size:clamp(30px,8.5vw,40px)!important}
   .jhst{border-radius:8px;overflow:hidden}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
+  .jhpw{flex-wrap:nowrap;gap:12px;align-items:stretch}
+  .jhp{width:42%;max-width:170px;height:auto}
+  .jhside{width:auto;flex:1;min-width:0;justify-content:center}
 }
 a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:2px;border-radius:2px}
 .consult-modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px)}
