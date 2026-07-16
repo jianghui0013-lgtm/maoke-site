@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#d12c25;--g2:#d12c25;--bl:#17259b;--gd:rgba(0,0,0,.075);--w:#111111;--grey:#595959;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
+:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#E60012;--g2:#E60012;--bl:#1E2F9C;--gd:rgba(0,0,0,.075);--w:#111111;--grey:#595959;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
@@ -39,9 +39,9 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.42)}
 .ho{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.3) 0%,rgba(0,0,0,.2) 30%,rgba(0,0,0,.82) 100%)}
 .hbot{position:absolute;bottom:52px;left:44px;right:44px;color:#fff;text-align:center}
-.hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#ffff00;margin-bottom:14px;text-transform:uppercase}
+.hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#FFE600;margin-bottom:14px;text-transform:uppercase}
 .ht{font-family:var(--ss);font-size:clamp(34px,5.5vw,80px);font-weight:900;line-height:1.2;margin-bottom:14px}
-.ht em{color:#ffff00;font-style:normal}
+.ht em{color:#FFE600;font-style:normal}
 .hsub{font-size:15px;color:rgba(255,255,255,.65);max-width:560px;line-height:1.7;margin:0 auto}
 .hcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
 .hbtn{border:none;border-radius:var(--r);padding:13px 24px;font-size:14px;font-weight:700}
@@ -185,7 +185,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .pkgsec{background:var(--ink);padding:80px 40px}
 .pkggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto}
 .pkg{background:var(--ink2);border-radius:12px;border:1px solid rgba(0,0,0,.1);padding:32px;display:flex;flex-direction:column;gap:16px}
-.pkg.hot{background:#17259b;border-color:#17259b}
+.pkg.hot{background:#1E2F9C;border-color:#1E2F9C}
 .pkg.hot .pkgd{color:rgba(255,255,255,.85)}
 .pkgt{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--g)}
 .pkgp{font-family:var(--sf);font-size:32px;font-weight:700;color:var(--w)}
@@ -302,7 +302,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .consult-gate{padding:22px 28px 28px;display:grid;gap:14px}
 .consult-choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .consult-choice button{border-radius:8px;border:1px solid rgba(0,0,0,.16);background:rgba(0,0,0,.09);color:#111111;padding:14px;font-size:13px;font-weight:700;line-height:1.5;text-align:left}
-.consult-choice button:first-child{background:rgba(0,0,0,.12);border-color:#17259b;color:#111111}
+.consult-choice button:first-child{background:rgba(0,0,0,.12);border-color:#1E2F9C;color:#111111}
 .consult-old{display:none;padding:22px 28px 28px;text-align:center}
 .consult-old.show{display:block}
 .consult-old-title{font-family:var(--sf);font-size:22px;font-weight:900;color:var(--g2);margin-bottom:8px}
@@ -315,16 +315,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 /* five-layer */
 .lay{padding:70px 40px}
 .lbadge{display:inline-flex;align-items:center;gap:16px;margin-bottom:12px}
-.lbadge b{font-family:var(--sf);font-size:22px;font-weight:900;color:#fff;letter-spacing:2px;white-space:nowrap;background:#17259b;border-radius:10px;padding:8px 20px}
+.lbadge b{font-family:var(--sf);font-size:22px;font-weight:900;color:#fff;letter-spacing:2px;white-space:nowrap;background:#1E2F9C;border-radius:10px;padding:8px 20px}
 .lbadge span{font-family:var(--sf);font-size:26px;font-weight:900;color:var(--bl)}
 .ccards{display:flex;flex-direction:column;gap:12px;max-width:920px;margin:0 auto}
 .ccard{display:flex;justify-content:space-between;align-items:center;gap:24px;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:22px 26px}
 .ccard>div:first-child{flex:1;min-width:0}
-.ccard.hl{background:#17259b;border-color:#17259b}
-.ccard.hl .ccb.o{background:#fff;color:#17259b}
+.ccard.hl{background:#1E2F9C;border-color:#1E2F9C}
+.ccard.hl .ccb.o{background:#fff;color:#1E2F9C}
 .ccbadges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .ccb{font-size:10px;font-weight:700;padding:2px 9px;border-radius:4px;background:var(--g);color:#fff}
-.ccb.o{background:#fff;color:#17259b;border:none}
+.ccb.o{background:#fff;color:#1E2F9C;border:none}
 .cct{font-family:var(--sf);font-size:18px;font-weight:700;color:var(--w);line-height:1.4}
 .ccd{font-size:13px;color:#333333;margin-top:5px;line-height:1.7}
 .ccf{font-size:12px;color:var(--grey);margin-top:4px}
@@ -344,7 +344,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .seltab td:first-child{font-weight:700;color:var(--w)}
 .seltab td:last-child{font-family:var(--sf);font-weight:700;color:var(--g2)}
 .pk3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
-a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color:#17259b}
+a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color:#1E2F9C}
 @media(max-width:960px){.ftiles{grid-template-columns:1fr}.pk3{grid-template-columns:1fr;max-width:520px}.ccard{flex-direction:column;align-items:flex-start}.ccp{text-align:left}.lay{padding:56px 14px}.ccard>div[style*="width:200px"]{width:100%!important}}
 @media(max-width:600px){.lbadge{flex-direction:column;align-items:center;gap:10px;width:100%}.lbadge span{font-size:22px;text-align:center}.selhint{display:block}}
 
@@ -375,7 +375,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <section class="hero">
 <div class="hslides" id="hslides"><div class="hs"><img src="img/sxy1.jpg" alt="现场6" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/sxy2.jpg" alt="现场7" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/sxy3.jpg" alt="现场8" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/sxy4.jpg" alt="现场9" loading="lazy"><div class="ho"></div></div></div>
 <div class="hbot">
-<h1 class="ht"><span style="color:#d12c25">一套战略组织系统</span><br><em>6-12个月彻底融入你的企业</em></h1>
+<h1 class="ht"><span style="color:#E60012">一套战略组织系统</span><br><em>6-12个月彻底融入你的企业</em></h1>
 <p class="hsub">不仅是让你学课程，而是帮你建立一套能自动增长的系统：老板定方向、团队能落地、系统持续运转、AI 工作台托底、业务选修课补能力，五层一起达成你的企业目标。</p>
 <div class="hcta">
 <button class="hbtn primary" onclick="openConsult()">免费领取蒋晖《电商管理》书</button>
