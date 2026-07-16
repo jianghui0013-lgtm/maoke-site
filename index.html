@@ -12,7 +12,7 @@ html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 max(40px,calc((100% - var(--mx)) / 2));background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
 .nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
 .nl{display:flex;align-items:center;flex-shrink:0}
 .nl img{width:100%;height:100%;object-fit:cover}
@@ -343,7 +343,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
     <div class="nl"><div class="nlogo"><img src="img/logo.png" alt="猫课"></div></div>
 </div>
 <div class="nlinks">
-<a href="shangxueyuan.html" style="color:var(--g);font-weight:700">猫课商学院 →</a>
+<a href="shangxueyuan.html" style="color:var(--w)">猫课商学院 →</a>
 </div>
 <button class="ncta" onclick="openConsult()">领取《电商管理》书</button>
   <button class="nham" id="nham" aria-label="打开菜单" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
@@ -366,7 +366,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 </div>
 </nav>
 <div class="nmenu" id="nmenu">
-<a href="shangxueyuan.html" style="color:var(--g);font-weight:700">猫课商学院 →</a>
+<a href="shangxueyuan.html" style="color:var(--w)">猫课商学院 →</a>
 <button class="nmenu-cta" onclick="closeMenu();openConsult()">免费领取《电商管理》书</button>
 </div>
 <div class="nmenu-bk" id="nmenuBk" onclick="closeMenu()"></div>
