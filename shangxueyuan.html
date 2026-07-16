@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#d12c25;--g2:#d12c25;--gd:rgba(0,0,0,.075);--w:#111111;--grey:#595959;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
+:root{--bk:#ffffff;--ink:#ffffff;--ink2:#ffffff;--g:#d12c25;--g2:#d12c25;--bl:#17259b;--gd:rgba(0,0,0,.075);--w:#111111;--grey:#595959;--sf:"Noto Sans SC",sans-serif;--ss:"Noto Sans SC",sans-serif;--mx:1180px;--r:4px}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
@@ -48,12 +48,12 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hbtn.primary{background:var(--g);color:#fff}.hbtn.primary:hover{background:var(--g2)}
 .hbtn.secondary{background:rgba(255, 255, 255, .14);color:#fff;border:1px solid rgba(255, 255, 255, .34)}
 .hproof{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;max-width:680px;justify-content:center;margin-left:auto;margin-right:auto}
-.hpill{font-size:12px;font-weight:700;color:#ffff00;background:rgba(255, 255, 0, .16);border:1px solid rgba(255, 255, 0, .4);border-radius:20px;padding:6px 12px}
+.hpill{font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:6px 12px}
 .hdots{position:absolute;bottom:28px;right:64px;display:flex;gap:7px}
 .hd{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);border:none;transition:all .3s;cursor:pointer}
-.ha{background:#ffff00;width:22px;border-radius:3px}
+.ha{background:#fff;width:22px;border-radius:3px}
 .harr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.4);border:1px solid rgba(255, 255, 255, .2);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;transition:all .2s}
-.harr:hover{background:rgba(255,255,0,.55)}
+.harr:hover{background:rgba(255,255,255,.55)}
 .hp{left:22px}.hn{right:22px}
 /* PAIN */
 .pb{background:var(--ink);border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}
@@ -66,7 +66,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 /* SECTION */
 .sec{padding:88px 40px}.si{max-width:var(--mx);margin:0 auto}
 .ey{font-size:12px;font-weight:700;letter-spacing:3px;color:var(--g2);text-transform:uppercase;margin-bottom:12px}
-.stl{font-family:var(--sf);font-size:clamp(32px,4vw,50px);font-weight:700;line-height:1.25;margin-bottom:14px}
+.stl{font-family:var(--sf);font-size:clamp(32px,4vw,50px);font-weight:700;line-height:1.25;margin-bottom:14px;color:var(--bl)}
 .ssb{font-size:14px;color:var(--grey);max-width:560px;line-height:1.8}
 .sh{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:44px}
 .sh.c{align-items:center;text-align:center}.sh.c .ssb{text-align:center}
@@ -79,7 +79,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .sysline{font-size:14px;color:#3d3d3d;line-height:1.9;margin:12px auto 0;max-width:780px}
 .syscards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .syscard{background:rgba(0,0,0,.075);border:1px solid rgba(0,0,0,.08);border-radius:8px;padding:18px 16px;min-height:142px}
-.sysnum{font-family:var(--sf);font-size:18px;font-weight:900;color:var(--g2);margin-bottom:8px}
+.sysnum{font-family:var(--sf);font-size:18px;font-weight:900;color:var(--bl);margin-bottom:8px}
 .syst{font-size:14px;font-weight:700;color:var(--w);margin-bottom:6px}
 .sysd{font-size:12px;color:var(--grey);line-height:1.7}
 .sysfoot{margin:18px auto 0;padding:16px 18px;border-radius:8px;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.1);font-size:13px;color:#333333;line-height:1.8;max-width:900px;display:flex;align-items:center;justify-content:space-between;gap:18px;text-align:left}
@@ -125,7 +125,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .vrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
 .vc{background:var(--ink2);border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
 .vcont{aspect-ratio:16/9;background:#0d1117;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;cursor:pointer}
-.vplay{width:44px;height:44px;background:rgba(255,255,0,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
+.vplay{width:44px;height:44px;background:rgba(255,255,255,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
 .vlbl{font-size:11px;color:#bbbbbb}
 .vinf{padding:12px 14px}
 .vtag{font-size:10px;color:var(--g);font-weight:700;margin-bottom:4px}
@@ -185,8 +185,8 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .pkgsec{background:var(--ink);padding:80px 40px}
 .pkggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto}
 .pkg{background:var(--ink2);border-radius:12px;border:1px solid rgba(0,0,0,.1);padding:32px;display:flex;flex-direction:column;gap:16px}
-.pkg.hot{background:#ffff00;border-color:#ffff00}
-.pkg.hot .pkgd{color:#333}
+.pkg.hot{background:#17259b;border-color:#17259b}
+.pkg.hot .pkgd{color:rgba(255,255,255,.85)}
 .pkgt{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--g)}
 .pkgp{font-family:var(--sf);font-size:32px;font-weight:700;color:var(--w)}
 .pkgd{font-size:13px;color:var(--grey);line-height:1.7}
@@ -245,7 +245,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .dbni{max-width:var(--mx);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 /* CTA */
 .ctasec{background:var(--bk);padding:80px 40px;text-align:center}
-.ctat{font-family:var(--sf);font-size:clamp(20px,3vw,34px);font-weight:700;margin-bottom:13px}
+.ctat{font-family:var(--sf);font-size:clamp(20px,3vw,34px);font-weight:700;margin-bottom:13px;color:var(--bl)}
 .ctas{font-size:14px;color:var(--grey);margin-bottom:26px;line-height:1.8}
 .ctabs{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .bg{background:var(--g);color:#fff;font-size:14px;font-weight:700;padding:13px 34px;border-radius:var(--r);border:none}
@@ -293,7 +293,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .consult-field label{font-size:13px;font-weight:700;color:#222222}
 .consult-field select,.consult-field input,.consult-field textarea{width:100%;border:1px solid rgba(0,0,0,.14);border-radius:8px;background:rgba(0,0,0,.09);color:#111111;font:14px/1.6 var(--ss);padding:12px 13px;outline:none}
 .consult-field textarea{min-height:108px;resize:vertical}
-.consult-field select:focus,.consult-field input:focus,.consult-field textarea:focus{border-color:rgba(255,255,0,.8);box-shadow:0 0 0 3px rgba(0,0,0,.05)}
+.consult-field select:focus,.consult-field input:focus,.consult-field textarea:focus{border-color:rgba(255,255,255,.8);box-shadow:0 0 0 3px rgba(0,0,0,.05)}
 .consult-submit{margin-top:4px;background:var(--g);color:#fff;border:none;border-radius:var(--r);padding:13px 18px;font-size:15px;font-weight:700}
 .consult-note{font-size:11px;color:#666666;text-align:center;line-height:1.6}
 .consult-success{display:none;padding:28px;text-align:center}
@@ -302,7 +302,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .consult-gate{padding:22px 28px 28px;display:grid;gap:14px}
 .consult-choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .consult-choice button{border-radius:8px;border:1px solid rgba(0,0,0,.16);background:rgba(0,0,0,.09);color:#111111;padding:14px;font-size:13px;font-weight:700;line-height:1.5;text-align:left}
-.consult-choice button:first-child{background:rgba(0,0,0,.12);border-color:#ffff00;color:#111111}
+.consult-choice button:first-child{background:rgba(0,0,0,.12);border-color:#17259b;color:#111111}
 .consult-old{display:none;padding:22px 28px 28px;text-align:center}
 .consult-old.show{display:block}
 .consult-old-title{font-family:var(--sf);font-size:22px;font-weight:900;color:var(--g2);margin-bottom:8px}
@@ -311,20 +311,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
-.jcsec .hpill{color:var(--g2)}
+.jcsec .hpill{color:var(--bl)}
 /* five-layer */
 .lay{padding:70px 40px}
 .lbadge{display:inline-flex;align-items:center;gap:16px;margin-bottom:12px}
-.lbadge b{font-family:var(--sf);font-size:22px;font-weight:900;color:#111;letter-spacing:2px;white-space:nowrap;background:#ffff00;border-radius:10px;padding:8px 20px}
-.lbadge span{font-family:var(--sf);font-size:26px;font-weight:900;color:var(--w)}
+.lbadge b{font-family:var(--sf);font-size:22px;font-weight:900;color:#fff;letter-spacing:2px;white-space:nowrap;background:#17259b;border-radius:10px;padding:8px 20px}
+.lbadge span{font-family:var(--sf);font-size:26px;font-weight:900;color:var(--bl)}
 .ccards{display:flex;flex-direction:column;gap:12px;max-width:920px;margin:0 auto}
 .ccard{display:flex;justify-content:space-between;align-items:center;gap:24px;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:22px 26px}
 .ccard>div:first-child{flex:1;min-width:0}
-.ccard.hl{background:#ffff00;border-color:#ffff00}
-.ccard.hl .ccb.o{background:#111;color:#ffff00}
+.ccard.hl{background:#17259b;border-color:#17259b}
+.ccard.hl .ccb.o{background:#fff;color:#17259b}
 .ccbadges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .ccb{font-size:10px;font-weight:700;padding:2px 9px;border-radius:4px;background:var(--g);color:#fff}
-.ccb.o{background:#ffff00;color:#111;border:none}
+.ccb.o{background:#fff;color:#17259b;border:none}
 .cct{font-family:var(--sf);font-size:18px;font-weight:700;color:var(--w);line-height:1.4}
 .ccd{font-size:13px;color:#333333;margin-top:5px;line-height:1.7}
 .ccf{font-size:12px;color:var(--grey);margin-top:4px}
@@ -344,15 +344,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .seltab td:first-child{font-weight:700;color:var(--w)}
 .seltab td:last-child{font-family:var(--sf);font-weight:700;color:var(--g2)}
 .pk3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
-a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color:#ffff00}
+a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color:#17259b}
 @media(max-width:960px){.ftiles{grid-template-columns:1fr}.pk3{grid-template-columns:1fr;max-width:520px}.ccard{flex-direction:column;align-items:flex-start}.ccp{text-align:left}.lay{padding:56px 14px}.ccard>div[style*="width:200px"]{width:100%!important}}
 @media(max-width:600px){.lbadge{flex-direction:column;align-items:center;gap:10px;width:100%}.lbadge span{font-size:22px;text-align:center}.selhint{display:block}}
+
+.ccard.hl .cct,.ccard.hl .ccpn{color:#fff}
+.ccard.hl .ccd{color:rgba(255,255,255,.85)}
+.ccard.hl .ccf{color:rgba(255,255,255,.72)}
+.ccard.hl .ccp>div{color:rgba(255,255,255,.72)}
+.pkg.hot .pkgt,.pkg.hot .pkgp{color:#fff}
 </style>
 </head>
 <body>
 <nav class="nav">
 <div class="nb">
-    <div class="nl"><div style="width:34px;height:34px;background:var(--g);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;letter-spacing:-1px">猫课</div></div>
+    <div class="nl"><div style="width:34px;height:34px;background:var(--bl);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;letter-spacing:-1px">猫课</div></div>
 <div><span style="font-size:15px;font-weight:700">电商战略组织商学院</span></div>
 </div>
 <div class="nlinks">
@@ -411,7 +417,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccf">适合：老板、合伙人</div></div>
 <div style="flex-shrink:0;width:200px">
 <div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
-<div style="width:34px;height:34px;background:rgba(255,255,0,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
+<div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
 </div>
@@ -424,7 +430,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccf">适合：老板、产品负责人</div></div>
 <div style="flex-shrink:0;width:200px">
 <div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
-<div style="width:34px;height:34px;background:rgba(255,255,0,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
+<div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
 </div>
@@ -455,7 +461,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccf">适合：老板、合伙人、HR</div></div>
 <div style="flex-shrink:0;width:200px">
 <div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
-<div style="width:34px;height:34px;background:rgba(255,255,0,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
+<div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
 </div>
@@ -549,10 +555,10 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="pkgd" style="margin-top:4px">老板带核心团队一起，装好整套系统</div>
 </div>
 <div class="pkgben" style="flex:1;min-width:320px;display:grid;grid-template-columns:1fr 1fr;gap:16px 36px">
-<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#222222;line-height:1.5"><span style="color:var(--g2);font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>核心课 <span style="color:var(--g2)">3 人选</span></span></div>
-<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#222222;line-height:1.5"><span style="color:var(--g2);font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>送 <span style="color:var(--g2)">10 万学费</span></span></div>
-<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#222222;line-height:1.5"><span style="color:var(--g2);font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>陪跑 + 工作台 <span style="color:var(--g2)">12 个月</span></span></div>
-<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#222222;line-height:1.5"><span style="color:var(--g2);font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>蒋老师 <span style="color:var(--g2)">10 分钟</span>战略咨询</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#fff;line-height:1.5"><span style="color:#fff;font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>核心课 <span style="color:#fff">3 人选</span></span></div>
+<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#fff;line-height:1.5"><span style="color:#fff;font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>送 <span style="color:#fff">10 万学费</span></span></div>
+<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#fff;line-height:1.5"><span style="color:#fff;font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>陪跑 + 工作台 <span style="color:#fff">12 个月</span></span></div>
+<div style="display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#fff;line-height:1.5"><span style="color:#fff;font-size:15px;margin-top:2px;flex-shrink:0">✓</span><span>蒋老师 <span style="color:#fff">10 分钟</span>战略咨询</span></div>
 </div>
 <button class="pkgbtn pbh" style="width:auto;margin:0;flex-shrink:0;padding:14px 30px" onclick="openConsult()">咨询报名方式 →</button>
 </div>
