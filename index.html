@@ -14,7 +14,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(30,47,156,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.14)}
 .nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:#fff}
-.nl{width:34px;height:34px;border-radius:8px;overflow:hidden;flex-shrink:0}
+.nl{display:flex;align-items:center;flex-shrink:0}
 .nl img{width:100%;height:100%;object-fit:cover}
 .nlinks{display:flex;gap:28px;margin-left:44px}
 .nlinks a{font-size:13px;color:var(--grey);transition:color .2s}.nlinks a:hover{color:var(--w)}
@@ -282,7 +282,7 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
   .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:20px 16px!important}
   .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px 12px!important}
   .dtag{display:none!important}
-  .navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
+  .nlogo{height:40px;padding:0 8px}.nlogo img{height:26px}.navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
   .stl[style*="clamp(40px"]{font-size:clamp(30px,8.5vw,40px)!important}
   .jhst{border-radius:8px;overflow:hidden}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
@@ -332,13 +332,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .navorn{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;transform:translateY(50%);pointer-events:none}
 .navorn i{flex:1;height:6px;background:#E60012;border-radius:3px}
 .navorn svg{width:200px;height:auto;flex:none;margin:0 -4px}
-.nlogo{height:46px;white-space:nowrap;padding:0 12px;background:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:var(--sf);font-size:19px;font-weight:900;color:var(--bl);letter-spacing:-1px}
+.nlogo{height:48px;padding:0 11px;background:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.nlogo img{height:32px;width:auto;display:block;flex:none}
 </style>
 </head>
 <body>
 <nav class="nav">
 <div class="nb">
-    <div class="nl"><div class="nlogo">猫课</div></div>
+    <div class="nl"><div class="nlogo"><img src="img/logo.png" alt="猫课"></div></div>
 </div>
 <div class="nlinks">
 <a href="shangxueyuan.html" style="color:#fff;font-weight:700">猫课商学院 →</a>
