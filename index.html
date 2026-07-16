@@ -12,16 +12,16 @@ html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(30,47,156,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.14)}
-.nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:#fff}
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 40px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
 .nl{display:flex;align-items:center;flex-shrink:0}
 .nl img{width:100%;height:100%;object-fit:cover}
 .nlinks{display:flex;gap:28px;margin-left:44px}
 .nlinks a{font-size:13px;color:var(--grey);transition:color .2s}.nlinks a:hover{color:var(--w)}
 .ncta{margin-left:auto;background:var(--g);color:#fff;font-size:13px;font-weight:700;padding:8px 20px;border-radius:var(--r);border:none;transition:background .2s}
 .ncta:hover{background:var(--g2)}
-.nham{display:none;margin-left:14px;width:38px;height:38px;background:transparent;border:1px solid rgba(255,255,255,.4);border-radius:8px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0}
-.nham span{display:block;width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .28s,opacity .28s}
+.nham{display:none;margin-left:14px;width:38px;height:38px;background:transparent;border:1px solid rgba(0,0,0,.16);border-radius:8px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0}
+.nham span{display:block;width:18px;height:2px;background:var(--w);border-radius:2px;transition:transform .28s,opacity .28s}
 .nham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .nham.open span:nth-child(2){opacity:0}
 .nham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
@@ -282,7 +282,7 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
   .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:20px 16px!important}
   .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px 12px!important}
   .dtag{display:none!important}
-  .nlogo{height:40px;padding:0 8px}.nlogo img{height:26px}.navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
+  .nlogo img{height:30px}.navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
   .stl[style*="clamp(40px"]{font-size:clamp(30px,8.5vw,40px)!important}
   .jhst{border-radius:8px;overflow:hidden}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
@@ -332,8 +332,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .navorn{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;transform:translateY(50%);pointer-events:none}
 .navorn i{flex:1;height:6px;background:#E60012;border-radius:3px}
 .navorn svg{width:200px;height:auto;flex:none;margin:0 -4px}
-.nlogo{height:48px;padding:0 11px;background:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center}
-.nlogo img{height:32px;width:auto;display:block;flex:none}
+.nlogo{height:48px;display:flex;align-items:center}
+.nlogo img{height:40px;width:auto;display:block;flex:none}
 </style>
 </head>
 <body>
@@ -342,7 +342,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
     <div class="nl"><div class="nlogo"><img src="img/logo.png" alt="猫课"></div></div>
 </div>
 <div class="nlinks">
-<a href="shangxueyuan.html" style="color:#fff;font-weight:700">猫课商学院 →</a>
+<a href="shangxueyuan.html" style="color:var(--g);font-weight:700">猫课商学院 →</a>
 </div>
 <button class="ncta" onclick="openConsult()">领取《电商管理》书</button>
   <button class="nham" id="nham" aria-label="打开菜单" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
