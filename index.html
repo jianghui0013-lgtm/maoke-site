@@ -36,8 +36,8 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hero{position:relative;height:60vh;min-height:420px;overflow:hidden;margin-top:58px}
 .hslides{display:flex;height:100%;transition:transform .7s cubic-bezier(.4,0,.2,1)}
 .hs{flex:0 0 100%;min-width:0;height:100%;position:relative;overflow:hidden}
-.hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.42)}
-.ho{position:absolute;inset:0;background:none}
+.hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.72)}
+.ho{position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,47,156,.6) 0%,rgba(17,26,105,.72) 100%)}
 .hbot{position:absolute;bottom:14vh;left:44px;right:44px;color:#fff;text-align:center}
 .hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#FFE600;margin-bottom:14px;text-transform:uppercase}
 .ht{font-family:var(--ss);font-size:min(calc(11.5vw - 12px),150px);font-weight:900;line-height:1.15;margin-bottom:16px;white-space:nowrap}
@@ -46,9 +46,9 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
 .hbtn{border:none;border-radius:var(--r);padding:13px 24px;font-size:14px;font-weight:700}
 .hbtn.primary{background:var(--g);color:#fff}.hbtn.primary:hover{background:var(--g2)}
-.hbtn.secondary{background:#1E2F9C;color:#fff;border:1px solid #1E2F9C}
+.hbtn.secondary{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5)}
 .hproof{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;max-width:680px;justify-content:center;margin-left:auto;margin-right:auto}
-.hpill{font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255, .16);border:1px solid rgba(255,255,255, .4);border-radius:20px;padding:6px 12px}
+.hpill{font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);border-radius:20px;padding:6px 12px}
 .hdots{position:absolute;bottom:28px;right:64px;display:flex;gap:7px}
 .hd{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);border:none;transition:all .3s;cursor:pointer}
 .ha{background:#fff;width:22px;border-radius:3px}
@@ -345,7 +345,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 <section class="hero">
 <div class="hslides" id="hslides"><div class="hs"><img src="img/idx1.jpg" alt="现场4" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/idx2.jpg" alt="现场2" loading="eager"><div class="ho"></div></div><div class="hs"><img src="img/idx3.jpg" alt="Jiang Hui classroom" loading="eager"><div class="ho"></div></div><div class="hs"><img src="img/idx4.jpg" alt="现场3" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/idx5.jpg" alt="现场5" loading="lazy"><div class="ho"></div></div></div>
 <div class="hbot">
-<h1 class="ht"><span style="color:#1E2F9C">电商管理</span><em style="margin-left:.12em">三天学透</em></h1>
+<h1 class="ht"><span style="color:#fff">电商管理</span><em style="margin-left:.12em">三天学透</em></h1>
 <p class="hsub">电商头部企业都在学习的电商管理课程，每年超 5000 家电商头部企业在学习。</p>
 <div class="hproof"><span class="hpill">学薪酬</span><span class="hpill">学考核</span><span class="hpill">学战略</span><span class="hpill">学组织</span><span class="hpill">学目标</span><span class="hpill">学选人</span></div>
 <div class="hcta">
