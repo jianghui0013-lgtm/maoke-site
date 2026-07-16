@@ -12,7 +12,7 @@ html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bk);color:var(--w);font-family:var(--ss);font-size:16px;line-height:1.7;overflow-x:hidden}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--ss)}
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;padding:0 max(40px,calc((100% - var(--mx)) / 2));background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:70px;display:flex;align-items:center;padding:0 max(40px,calc((100% - var(--mx)) / 2));background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
 .nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
 .nl{display:flex;align-items:center;flex-shrink:0}
 .nl img{width:100%;height:100%;object-fit:cover}
@@ -25,7 +25,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .nham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .nham.open span:nth-child(2){opacity:0}
 .nham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
-.nmenu{position:fixed;top:58px;left:0;right:0;z-index:899;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08);display:flex;flex-direction:column;padding:8px 24px 24px;transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s,visibility .3s}
+.nmenu{position:fixed;top:70px;left:0;right:0;z-index:899;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08);display:flex;flex-direction:column;padding:8px 24px 24px;transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s,visibility .3s}
 .nmenu.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
 .nmenu a{font-size:16px;color:#333333;padding:15px 4px;border-bottom:1px solid rgba(0,0,0,.06);transition:color .2s}
 .nmenu a:active,.nmenu a:hover{color:var(--g2)}
@@ -33,7 +33,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .nmenu-bk{position:fixed;inset:58px 0 0;z-index:898;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
 .nmenu-bk.open{opacity:1;visibility:visible}
 /* HERO */
-.hero{position:relative;height:60vh;min-height:420px;overflow:hidden;margin-top:58px}
+.hero{position:relative;height:60vh;min-height:420px;overflow:hidden;margin-top:70px}
 .hslides{display:flex;height:100%;transition:transform .7s cubic-bezier(.4,0,.2,1)}
 .hs{flex:0 0 100%;min-width:0;height:100%;position:relative;overflow:hidden}
 .hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.72)}
@@ -283,7 +283,7 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
   .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:20px 16px!important}
   .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px 12px!important}
   .dtag{display:none!important}
-  .nlogo img{height:30px}.nslogan{gap:150px}.nslogan img{height:19px}.navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
+  .nlogo img{height:30px}.nslogan{gap:150px}.nslogan img{height:22px}.navorn svg{width:140px}.navorn i{height:5px}.brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
   .jhst{border-radius:8px;overflow:hidden}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
   .jhpw{flex-wrap:nowrap;gap:12px;align-items:stretch}
@@ -331,11 +331,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 .brdv.dn{margin-bottom:-49px}
 .navorn{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;transform:translateY(50%);pointer-events:none}
 .navorn i{flex:1;height:6px;background:#E60012;border-radius:3px}
-.navorn svg{width:200px;height:auto;flex:none;margin:0 -4px}
+.navorn svg{width:clamp(140px,15.6vw,200px);height:auto;flex:none;margin:0 -4px}
 .nlogo{height:48px;display:flex;align-items:center}
 .nlogo img{height:40px;width:auto;display:block;flex:none}
-.nslogan{position:absolute;left:50%;top:0;height:58px;transform:translateX(-50%);display:flex;align-items:center;gap:216px;pointer-events:none;z-index:1}
-.nslogan img{height:26px;width:auto;display:block;flex:none}
+.nslogan{position:absolute;left:50%;top:0;height:70px;transform:translateX(-50%);display:flex;align-items:center;gap:clamp(150px,17vw,216px);pointer-events:none;z-index:1}
+.nslogan img{height:clamp(22px,3.3vw,42px);width:auto;display:block;flex:none}
 </style>
 </head>
 <body>
