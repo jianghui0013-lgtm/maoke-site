@@ -282,7 +282,7 @@ footer a{color:var(--grey);margin-left:16px}footer a:hover{color:var(--w)}
   .mrow>div:first-child{border-right:none!important;border-bottom:1px solid rgba(0,0,0,.1)!important;padding:20px 16px!important}
   .mrow>div:last-child{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px 12px!important}
   .dtag{display:none!important}
-  .brdv{margin-top:-34px}.brdv svg{width:140px}.brdv i{height:5px}
+  .brdv svg{width:140px}.brdv i{height:5px}.brdv.up{margin-top:-34px}.brdv.dn{margin-bottom:-34px}
   .stl[style*="clamp(40px"]{font-size:clamp(30px,8.5vw,40px)!important}
   .jhst{border-radius:8px;overflow:hidden}
   .hcta{gap:10px}.hbtn{width:100%;padding:12px 16px}.syssec{padding:58px 20px}.syscards{grid-template-columns:1fr}.sysfoot{flex-direction:column;align-items:stretch;text-align:center}.sysfoot button{width:100%}.consult-choice{grid-template-columns:1fr}
@@ -324,9 +324,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 }
 .jcsec .hpill{color:#fff;background:#1E2F9C;border-color:#1E2F9C}
 .ctasec .ctat{color:#fff}.ctasec .ctas{color:rgba(255,255,255,.85)}.ctasec .ctami{color:rgba(255,255,255,.8)}.ctasec .bo{color:#fff;border-color:rgba(255,255,255,.55)}
-.brdv{display:flex;align-items:center;justify-content:center;width:100%;padding:0;margin-top:-49px;position:relative;z-index:5}
+.brdv{display:flex;align-items:center;justify-content:center;width:100%;padding:0;position:relative;z-index:5}
 .brdv i{flex:1;height:6px;background:#E60012;border-radius:3px}
 .brdv svg{width:200px;height:auto;flex:none;margin:0 -4px}
+.brdv.up{margin-top:-49px}
+.brdv.dn{margin-bottom:-49px}
 </style>
 </head>
 <body>
@@ -362,7 +364,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 <div class="hdots"><button class="hd ha" onclick="hGo(0)"></button><button class="hd" onclick="hGo(1)"></button><button class="hd" onclick="hGo(2)"></button><button class="hd" onclick="hGo(3)"></button><button class="hd" onclick="hGo(4)"></button></div>
 </section>
 
-<div class="brdv" aria-hidden="true">
+<div class="brdv up" aria-hidden="true">
 <i></i>
 <svg viewBox="0 0 148 72" xmlns="http://www.w3.org/2000/svg">
 <rect x="0" y="33.8" width="28" height="4.4" rx="2.2" fill="#E60012"/>
@@ -768,6 +770,23 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 </section>
 
 <div class="dv"></div>
+<div class="brdv dn" aria-hidden="true">
+<i></i>
+<svg viewBox="0 0 148 72" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="33.8" width="28" height="4.4" rx="2.2" fill="#E60012"/>
+<rect x="120" y="33.8" width="28" height="4.4" rx="2.2" fill="#E60012"/>
+<path d="M66,35 q8,-8 16,0" stroke="#E60012" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="45" cy="36" r="24" fill="#E60012"/>
+<circle cx="45" cy="36" r="17.2" fill="#FFE600"/>
+<path d="M45,23 C49.5,29 49.5,43 45,49 C40.5,43 40.5,29 45,23 Z" fill="#1E2F9C"/>
+<circle cx="42.7" cy="29.2" r="2.1" fill="#fff"/>
+<circle cx="103" cy="36" r="24" fill="#E60012"/>
+<circle cx="103" cy="36" r="17.2" fill="#FFE600"/>
+<path d="M103,23 C107.5,29 107.5,43 103,49 C98.5,43 98.5,29 103,23 Z" fill="#1E2F9C"/>
+<circle cx="100.7" cy="29.2" r="2.1" fill="#fff"/>
+</svg>
+<i></i>
+</div>
 <section class="ctasec">
   <div class="si">
     <h2 class="ctat">想系统学习蒋晖的电商管理方法？<br>从《电商管理》这本书开始</h2>
