@@ -36,11 +36,11 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .hero{position:relative;height:60vh;min-height:420px;overflow:hidden;margin-top:58px}
 .hslides{display:flex;height:100%;transition:transform .7s cubic-bezier(.4,0,.2,1)}
 .hs{flex:0 0 100%;min-width:0;height:100%;position:relative;overflow:hidden}
-.hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
-.ho{position:absolute;inset:0;background:linear-gradient(155deg,rgba(30,47,156,.62) 0%,rgba(18,28,92,.5) 42%,rgba(8,12,45,.86) 100%)}
+.hs img{width:100%;height:100%;object-fit:cover;filter:brightness(.42)}
+.ho{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.3) 0%,rgba(0,0,0,.2) 30%,rgba(0,0,0,.82) 100%)}
 .hbot{position:absolute;bottom:14vh;left:44px;right:44px;color:#fff;text-align:center}
 .hey{font-size:11px;font-weight:700;letter-spacing:4px;color:#FFE600;margin-bottom:14px;text-transform:uppercase}
-.ht{font-family:var(--ss);font-size:min(calc(11.5vw - 12px),150px);font-weight:900;line-height:1.15;margin-bottom:16px;white-space:nowrap}
+.ht{font-family:var(--ss);font-size:min(calc(11.5vw - 12px),150px);font-weight:900;line-height:1.15;margin-bottom:16px;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.55)}
 .ht em{color:#FFE600;font-style:normal}
 .hsub{font-size:15px;color:rgba(255,255,255,.65);max-width:560px;line-height:1.7;margin:0 auto}
 .hcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
@@ -119,7 +119,7 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{cur
 .aui{font-size:17px;flex-shrink:0;margin-top:1px}
 .aut{font-size:14px;color:#333333;line-height:1.8}.aut strong{color:var(--w)}
 /* Testimonials */
-.tey{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--g);margin-bottom:16px}
+.tey{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--bl);margin-bottom:16px}
 .ti{padding:13px 0;border-bottom:1px solid rgba(0,0,0,.06);display:flex;gap:11px;align-items:flex-start}
 .ti:last-child{border-bottom:none}
 .td{width:4px;height:4px;background:var(--g);border-radius:50%;flex-shrink:0;margin-top:8px}
@@ -344,7 +344,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 <section class="hero">
 <div class="hslides" id="hslides"><div class="hs"><img src="img/idx1.jpg" alt="现场4" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/idx2.jpg" alt="现场2" loading="eager"><div class="ho"></div></div><div class="hs"><img src="img/idx3.jpg" alt="Jiang Hui classroom" loading="eager"><div class="ho"></div></div><div class="hs"><img src="img/idx4.jpg" alt="现场3" loading="lazy"><div class="ho"></div></div><div class="hs"><img src="img/idx5.jpg" alt="现场5" loading="lazy"><div class="ho"></div></div></div>
 <div class="hbot">
-<h1 class="ht"><span style="color:#E60012">电商管理</span><em style="margin-left:.12em">三天学透</em></h1>
+<h1 class="ht"><span style="color:#1E2F9C">电商管理</span><em style="margin-left:.12em">三天学透</em></h1>
 <p class="hsub">电商头部企业都在学习的电商管理课程，每年超 5000 家电商头部企业在学习。</p>
 <div class="hproof"><span class="hpill">学薪酬</span><span class="hpill">学考核</span><span class="hpill">学战略</span><span class="hpill">学组织</span><span class="hpill">学目标</span><span class="hpill">学选人</span></div>
 <div class="hcta">
@@ -562,7 +562,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
   <div class="si">
     <div class="sh">
       <h2 style="font-family:var(--sf);font-size:min(8vw,72px);font-weight:900;line-height:1.15;margin-bottom:14px;color:var(--bl);letter-spacing:-1px;white-space:nowrap">蒋晖原创电商管理方法</h2>
-      <div style="font-size:18px;font-weight:700;color:#E60012;margin-bottom:12px">电商头部企业都在用的管理方法</div>
+      <div style="font-size:18px;font-weight:700;color:#1E2F9C;margin-bottom:12px">电商头部企业都在用的管理方法</div>
       <p class="ssb" style="font-size:14px;color:#5b6b7c;max-width:600px;line-height:1.8">经数千家企业实践验证 · 不是书本理论 · 每一套都有头部企业用真实利润增长证明过</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:3px">
@@ -570,29 +570,29 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
       <!-- 方法01 - 金色主题 -->
       <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(0,0,0,.075),rgba(0,0,0,.03));border:1px solid rgba(0,0,0,.11);border-radius:10px;overflow:hidden">
         <div style="padding:36px 32px;border-right:1px solid rgba(0,0,0,.09);display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,.045)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#E60012;margin-bottom:10px">原创方法 01</div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#1E2F9C;margin-bottom:10px">原创方法 01</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">关键指标薪酬</div>
           <div style="width:32px;height:3px;background:#1E2F9C;border-radius:2px"></div>
         </div>
         <div style="padding:32px 36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">底层颠覆</div><div style="font-size:13px;color:var(--grey);line-height:1.7">坚决废除提成制和分润制，斩断组织内部占山为王、利益割裂的隐患</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">高能吸引</div><div style="font-size:13px;color:var(--grey);line-height:1.7">用显著高于市场价值的高底薪直接买断平庸，死死锁定最顶尖的S级人才</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">关键指标考核</div><div style="font-size:13px;color:var(--grey);line-height:1.7">围绕关键指标设计考核方向，让人人在关键指标上做到 90 分以上</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">底层颠覆</div><div style="font-size:13px;color:var(--grey);line-height:1.7">坚决废除提成制和分润制，斩断组织内部占山为王、利益割裂的隐患</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">高能吸引</div><div style="font-size:13px;color:var(--grey);line-height:1.7">用显著高于市场价值的高底薪直接买断平庸，死死锁定最顶尖的S级人才</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">关键指标考核</div><div style="font-size:13px;color:var(--grey);line-height:1.7">围绕关键指标设计考核方向，让人人在关键指标上做到 90 分以上</div></div>
         </div>
       </div>
 
       <!-- 方法02 - 蓝色主题 -->
       <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(0,0,0,.045),rgba(0,0,0,.02));border:1px solid rgba(0,0,0,.1);border-radius:10px;overflow:hidden">
         <div style="padding:36px 32px;border-right:1px solid rgba(0,0,0,.09);display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,.03)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#E60012;margin-bottom:10px">原创方法 02</div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#1E2F9C;margin-bottom:10px">原创方法 02</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">战略四格</div>
           <div style="width:32px;height:3px;background:#1E2F9C;border-radius:2px"></div>
         </div>
         <div style="padding:26px 32px">
           <div style="display:grid;grid-template-columns:88px 1fr 1fr;gap:10px;align-items:stretch">
             <div></div>
-            <div style="text-align:center;font-size:13px;font-weight:700;color:#E60012;letter-spacing:2px;padding:2px 0">流 量</div>
-            <div style="text-align:center;font-size:13px;font-weight:700;color:#E60012;letter-spacing:2px;padding:2px 0">产 品</div>
+            <div style="text-align:center;font-size:13px;font-weight:700;color:#1E2F9C;letter-spacing:2px;padding:2px 0">流 量</div>
+            <div style="text-align:center;font-size:13px;font-weight:700;color:#1E2F9C;letter-spacing:2px;padding:2px 0">产 品</div>
             <div style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#fff;background:#1E2F9C;border-radius:8px;padding:8px 4px;line-height:1.5">内部<br>能力</div>
             <div style="background:rgba(0,0,0,.06);border-radius:8px;padding:14px;border:1px solid rgba(0,0,0,.07)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">核心流量能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">深挖团队长板，构建无法被复制的流量护城河</div></div>
             <div style="background:rgba(0,0,0,.06);border-radius:8px;padding:14px;border:1px solid rgba(0,0,0,.07)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:4px">产品核心能力</div><div style="font-size:11px;color:var(--grey);line-height:1.6">死磕产品研发、功能差异化或供应链独占壁垒</div></div>
@@ -606,21 +606,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
       <!-- 方法03 - 绿色主题 -->
       <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(0,0,0,.045),rgba(0,0,0,.02));border:1px solid rgba(0,0,0,.1);border-radius:10px;overflow:hidden">
         <div style="padding:36px 32px;border-right:1px solid rgba(0,0,0,.09);display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,.03)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#E60012;margin-bottom:10px">原创方法 03</div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#1E2F9C;margin-bottom:10px">原创方法 03</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">小组制</div>
           <div style="width:32px;height:3px;background:#1E2F9C;border-radius:2px"></div>
         </div>
         <div style="padding:32px 36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">组织打散</div><div style="font-size:13px;color:var(--grey);line-height:1.7">拆分为3-6人（10人封顶）的敏捷战术细胞，打破传统金字塔大部门和割裂的层级</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">自我运营</div><div style="font-size:13px;color:var(--grey);line-height:1.7">前台按渠道或产品独立建制，全面推行OKR策略训练，策略与执行彻底分开</div></div>
-          <div><div style="font-size:13px;font-weight:700;color:#E60012;margin-bottom:7px">大公司拆成小老板</div><div style="font-size:13px;color:var(--grey);line-height:1.7">让最听得见炮火的小组长自主算账、自主寻找赢的路径，组织极度扁平</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">组织打散</div><div style="font-size:13px;color:var(--grey);line-height:1.7">拆分为3-6人（10人封顶）的敏捷战术细胞，打破传统金字塔大部门和割裂的层级</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">自我运营</div><div style="font-size:13px;color:var(--grey);line-height:1.7">前台按渠道或产品独立建制，全面推行OKR策略训练，策略与执行彻底分开</div></div>
+          <div><div style="font-size:13px;font-weight:700;color:#1E2F9C;margin-bottom:7px">大公司拆成小老板</div><div style="font-size:13px;color:var(--grey);line-height:1.7">让最听得见炮火的小组长自主算账、自主寻找赢的路径，组织极度扁平</div></div>
         </div>
       </div>
 
       <!-- 方法04 - 红色主题 -->
       <div class="mrow" style="display:grid;grid-template-columns:260px 1fr;background:linear-gradient(135deg,rgba(0,0,0,.045),rgba(0,0,0,.02));border:1px solid rgba(0,0,0,.1);border-radius:10px;overflow:hidden">
         <div style="padding:36px 32px;border-right:1px solid rgba(0,0,0,.09);display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,.03)">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#E60012;margin-bottom:10px">原创方法 04</div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:#1E2F9C;margin-bottom:10px">原创方法 04</div>
           <div style="font-family:var(--sf);font-size:28px;font-weight:700;color:var(--w);margin-bottom:4px">SABC人才法则</div>
           <div style="width:32px;height:3px;background:#1E2F9C;border-radius:2px"></div>
         </div>
@@ -696,7 +696,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
           <button class="bg" style="font-size:13px;padding:11px 18px;width:fit-content" onclick="openConsult()">免费领取《电商管理》书 →</button>
         </div>
         <div style="padding:36px 40px">
-          <div style="font-size:11px;font-weight:700;color:var(--g);letter-spacing:1px;margin-bottom:18px">课程内容 · 三天六大模块 · 蒋晖亲授</div>
+          <div style="font-size:11px;font-weight:700;color:var(--bl);letter-spacing:1px;margin-bottom:18px">课程内容 · 三天六大模块 · 蒋晖亲授</div>
           <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
             <div style="background:rgba(0,0,0,.06);border-radius:8px;padding:14px;border:1px solid rgba(0,0,0,.08)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">薪酬设计</div><div style="font-size:11px;color:var(--grey);line-height:1.6">彻底废除提成制，建立高底薪高标准体系，让收入与价值精准对应</div></div>
             <div style="background:rgba(0,0,0,.06);border-radius:8px;padding:14px;border:1px solid rgba(0,0,0,.08)"><div style="font-size:12px;font-weight:700;color:var(--w);margin-bottom:5px">绩效考核</div><div style="font-size:11px;color:var(--grey);line-height:1.6">动态指标四步骤，持续拉升团队标准，让员工自驱而非靠盯</div></div>
@@ -716,8 +716,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--g2);outline-offset:
 </section>
 <section class="fusec">
 <div class="fucard" style="text-align:center">
-<div style="display:inline-flex;align-items:center;gap:14px;color:var(--g2);font-size:13px;font-weight:700;letter-spacing:2px;margin-bottom:14px">
-<span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--g2))"></span>
+<div style="display:inline-flex;align-items:center;gap:14px;color:var(--bl);font-size:13px;font-weight:700;letter-spacing:2px;margin-bottom:14px">
+<span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--bl))"></span>
 <span style="white-space:nowrap">管理打底 · 商学院进阶</span>
 <span style="width:40px;height:1px;background:linear-gradient(90deg,var(--g2),transparent)"></span>
 </div>
