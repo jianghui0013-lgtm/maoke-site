@@ -929,12 +929,20 @@ function chooseLeadStatus(status){
   }
   if(form){form.style.display='grid';setTimeout(()=>form.querySelector('input,select,textarea')?.focus(),80);}
 }
+// ★收线索地址：注册 Formspree 后把 https://formspree.io/f/xxxxx 填进下面引号里，就开始收到提交
+var LEAD_ENDPOINT='';
 function submitConsult(e){
   e.preventDefault();
-  const form=document.getElementById('consultForm');
-  const success=document.getElementById('consultSuccess');
-  if(form)form.style.display='none';
-  if(success)success.classList.add('show');
+  var form=document.getElementById('consultForm');
+  var success=document.getElementById('consultSuccess');
+  var show=function(){ if(form)form.style.display='none'; if(success)success.classList.add('show'); };
+  if(!LEAD_ENDPOINT){ show(); return; }
+  var data={}; new FormData(form).forEach(function(v,k){data[k]=v;});
+  data['来源页面']=document.title; data['提交时间']=new Date().toLocaleString();
+  var btn=form.querySelector('.consult-submit'); if(btn){btn.disabled=true;btn.textContent='提交中…';}
+  fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(){ show(); })
+    .catch(function(){ show(); });
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeConsult();});
 
