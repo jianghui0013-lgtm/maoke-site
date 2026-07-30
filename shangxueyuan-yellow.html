@@ -446,7 +446,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccd">帮你定出一个持续增长的战略方向</div>
 <div class="ccf">适合：老板、合伙人</div></div>
 <div style="flex-shrink:0;width:200px">
-<div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
+<div data-vid="5cea6c52529f4f6715e5f58aeda8cf22_5" onclick="playPolyv(this)" style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
 <div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
@@ -459,7 +459,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccd">帮你定出持续产出高利润爆品的方案</div>
 <div class="ccf">适合：老板、产品负责人</div></div>
 <div style="flex-shrink:0;width:200px">
-<div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
+<div data-vid="5cea6c52522b9484860ed3aac12d03cb_5" onclick="playPolyv(this)" style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
 <div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
@@ -490,7 +490,7 @@ a.syscard{display:block;transition:border-color .2s}a.syscard:hover{border-color
 <div class="ccd">帮你设计出能复制的运营小组</div>
 <div class="ccf">适合：老板、合伙人、HR</div></div>
 <div style="flex-shrink:0;width:200px">
-<div style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
+<div data-vid="5cea6c52526e7741a222b211441ae72e_5" onclick="playPolyv(this)" style="aspect-ratio:16/9;background:#0d1117;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
 <div style="width:34px;height:34px;background:rgba(255,255,255,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">▶</div>
 <div style="font-size:10px;color:#bbbbbb">学员好评 · 点击播放</div>
 </div>
@@ -758,6 +758,24 @@ if(!RM)hTm=setInterval(()=>hSlide(1),4500);
 // FAQ
 document.querySelectorAll('.fq').forEach(q=>{q.addEventListener('click',()=>{const fi=q.parentElement,was=fi.classList.contains('open');document.querySelectorAll('.fi').forEach(f=>f.classList.remove('open'));if(!was)fi.classList.add('open');});});
 
+</script>
+<script>
+var __plvCbs=[];
+function __plvLoad(cb){
+  if(window.polyvPlayer){cb();return;}
+  __plvCbs.push(cb);
+  if(window.__plvLoading)return; window.__plvLoading=1;
+  var s=document.createElement('script');
+  s.src='https://player.polyv.net/resp/vod-player/latest/player.js';
+  s.onload=function(){__plvCbs.forEach(function(f){f();});__plvCbs=[];};
+  document.head.appendChild(s);
+}
+function playPolyv(box){
+  var vid=box.getAttribute('data-vid'); if(!vid||box.dataset.plv)return;
+  box.dataset.plv='1'; box.style.cursor='default'; box.style.position='relative';
+  box.innerHTML='<div id="plv_'+vid+'" style="position:absolute;inset:0"></div>';
+  __plvLoad(function(){ new polyvPlayer({wrap:'#plv_'+vid,width:'100%',height:'100%',vid:vid,playsafe:''}); });
+}
 </script>
 </body>
 </html>
